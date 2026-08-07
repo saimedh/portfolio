@@ -1,0 +1,54 @@
+@import "tailwindcss";
+@config "../tailwind.config.js";
+
+@layer base {
+  * {
+    @apply border-bg-border;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-bg text-ink;
+  }
+  ::selection {
+    @apply bg-accent/40 text-white;
+  }
+  :focus-visible {
+    outline: 2px solid #6E56CF;
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+  h1, h2, h3, h4 {
+    @apply font-display tracking-tight;
+  }
+  ::-webkit-scrollbar { width: 10px; }
+  ::-webkit-scrollbar-track { background: #0A0B0F; }
+  ::-webkit-scrollbar-thumb { background: #23262E; border-radius: 8px; }
+  ::-webkit-scrollbar-thumb:hover { background: #3D3164; }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-bg-raised/60 backdrop-blur-xl border border-bg-border;
+  }
+  .eyebrow {
+    @apply font-mono text-xs uppercase tracking-[0.2em] text-signal;
+  }
+  .container-page {
+    @apply mx-auto max-w-6xl px-6 sm:px-8;
+  }
+  .grain {
+    background-image: radial-gradient(rgba(255,255,255,0.035) 1px, transparent 1px);
+    background-size: 3px 3px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
