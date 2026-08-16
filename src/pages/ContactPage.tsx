@@ -70,6 +70,34 @@ export default function ContactPage() {
           ))}
         </motion.div>
       </div>
+
+      {/* CTA Section */}
+      <motion.section
+        initial={{ opacity: 0, y: 16 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5 }}
+        className="mt-20 rounded-2xl border border-accent/30 bg-gradient-to-br from-bg-surface to-bg-raised p-8 sm:p-12"
+      >
+        <p className="eyebrow">// who_i_work_with</p>
+        <h2 className="mt-3 font-display text-2xl font-semibold text-ink sm:text-3xl">
+          Building an AI product or looking for an AI/ML developer?
+        </h2>
+        <div className="mt-6 space-y-4 text-ink-muted">
+          <p>
+            I'm looking for internships where I can work on real AI systems in production —
+            not research prototypes or demo apps. I care about the full stack: data pipelines,
+            model serving, API design, and building UIs that real users can navigate.
+          </p>
+          <p>
+            If you're hiring for roles that involve shipping AI products to users, handling
+            edge cases, optimizing for latency or cost, or integrating models into existing
+            systems — reach out. I'm especially interested in teams that care about what
+            happens when the model is wrong, how to handle cold-start users, and how to
+            design systems that degrade gracefully when things fail.
+          </p>
+        </div>
+      </motion.section>
     </div>
   );
 }
