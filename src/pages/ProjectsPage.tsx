@@ -27,7 +27,12 @@ export default function ProjectsPage() {
 
       <div className="mt-14 space-y-10">
         {projects.map((project, i) => (
-          <ProjectCard key={project.slug} project={project} index={i} />
+          <ProjectCard
+            key={project.slug}
+            project={project}
+            index={i}
+            nextProjectSlug={i < projects.length - 1 ? projects[i + 1].slug : undefined}
+          />
         ))}
       </div>
     </div>

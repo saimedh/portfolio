@@ -24,19 +24,17 @@ export function Hero() {
           transition={{ duration: 0.6, delay: 0.1 }}
           className="max-w-3xl text-4xl font-semibold leading-[1.1] text-ink sm:text-6xl"
         >
-          I build production-ready
-          <span className="bg-gradient-to-r from-accent to-signal bg-clip-text text-transparent"> AI web applications.</span>
+          I build AI-powered products that turn
+          <span className="bg-gradient-to-r from-accent to-signal bg-clip-text text-transparent"> real problems into usable software.</span>
         </motion.h1>
 
         <motion.p
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="max-w-xl text-lg text-ink-muted"
+          className="max-w-xl text-lg text-ink-muted leading-relaxed"
         >
-          Not notebooks. Not demos that break on the second click. Five AI systems,
-          each shipped from data pipeline to deployed interface — for public
-          safety, healthcare access, and civic services.
+          Not notebooks or brittle prototypes. Six end-to-end systems shipped from data pipelines and model training to deployed, usable interfaces.
         </motion.p>
 
         <motion.div
@@ -46,13 +44,19 @@ export function Hero() {
           className="flex flex-wrap items-center gap-4"
         >
           <Link
-            to="/contact"
-            className="inline-flex items-center gap-2 rounded-lg bg-accent px-6 py-3.5 text-sm font-medium text-white shadow-glow transition-all hover:bg-accent-soft hover:shadow-[0_0_50px_rgba(110,86,207,0.4)] active:scale-[0.98]"
+            to="/projects"
+            className="inline-flex items-center gap-2 rounded-lg bg-accent px-6 py-3.5 text-sm font-medium text-white shadow-glow transition-all hover:bg-accent-soft hover:shadow-[0_0_50px_rgba(99,102,241,0.4)] active:scale-[0.98]"
           >
-            Invite me for an internship interview <ArrowRight size={16} aria-hidden="true" />
+            View My Work <ArrowRight size={16} aria-hidden="true" />
+          </Link>
+          <Link
+            to="/contact"
+            className="inline-flex items-center gap-2 rounded-lg border border-bg-border bg-bg-surface px-6 py-3.5 text-sm font-medium text-ink transition-colors hover:border-accent/40 hover:text-white"
+          >
+            Contact Me
           </Link>
           <LinkButton href="https://github.com/saimedh" variant="secondary" icon={<Code2 size={16} aria-hidden="true" />}>
-            View GitHub
+            GitHub
           </LinkButton>
         </motion.div>
 
@@ -68,10 +72,10 @@ export function Hero() {
             <span className="h-2.5 w-2.5 rounded-full bg-[#5B616D]/60" />
             <span className="ml-2 text-ink-faint">build.log</span>
           </div>
+          <p><span className="text-signal">✓</span> paverasa-ai — live mvp, 10+ ai modules</p>
+          <p><span className="text-signal">✓</span> crime-prediction-system — deployed, ~93% accuracy</p>
           <p><span className="text-signal">✓</span> api-emporium (freekeys) — live, 90+ free tiers</p>
-          <p><span className="text-signal">✓</span> vedha-ai — live, fast conversational assistant</p>
-          <p><span className="text-signal">✓</span> matchcine — live, taste matching engine</p>
-          <p className="text-ink-faint">running 2 more…</p>
+          <p className="text-ink-faint">running 4 more…</p>
         </motion.div>
       </div>
     </section>

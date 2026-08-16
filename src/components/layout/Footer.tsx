@@ -20,6 +20,7 @@ export function Footer() {
             <li><a href="/" className="text-ink-muted hover:text-ink">Home</a></li>
             <li><a href="/projects" className="text-ink-muted hover:text-ink">Projects</a></li>
             <li><a href="/about" className="text-ink-muted hover:text-ink">About</a></li>
+            <li><a href="/week-03" className="text-ink-muted hover:text-ink">Week 03 Process</a></li>
             <li><a href="/contact" className="text-ink-muted hover:text-ink">Contact</a></li>
           </ul>
         </div>
