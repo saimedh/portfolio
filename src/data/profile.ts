@@ -53,7 +53,7 @@ export const timeline = [
 ];
 
 export const proofStats = [
-  { value: "[#]", label: "[NEEDS MY INPUT: Real metric about your work]" },
-  { value: "[#]", label: "[NEEDS MY INPUT: Real metric about your work]" },
-  { value: "[#]", label: "[NEEDS MY INPUT: Real metric about your work]" },
+  { value: "5+", label: "End-to-end AI/ML projects built from data processing through deployment" },
+  { value: "4", label: "Projects with deployed interfaces or APIs that can be tested outside the training environment" },
+  { value: "100%", label: "Projects documented with known limitations and failure cases rather than presenting the model as perfect" },
 ];
