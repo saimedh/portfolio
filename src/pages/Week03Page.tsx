@@ -48,7 +48,7 @@ const colorTokens = [
 
 export default function Week03Page() {
   useDocumentMeta(
-    "Week 03: Portfolio Judgment & Design Process — Saimedh Porandla",
+    "Design Process & Portfolio Judgment — Saimedh Porandla",
     "Documentation of image curation rules, through-line progression, and visual judgment systems."
   );
 
@@ -61,7 +61,7 @@ export default function Week03Page() {
         transition={{ duration: 0.5 }}
         className="max-w-3xl"
       >
-        <span className="eyebrow">// week_03_deliverable</span>
+        <span className="eyebrow">// design_process</span>
         <h1 className="mt-3 text-4xl font-semibold text-ink sm:text-5xl">
           Portfolio Judgment & Process
         </h1>
@@ -102,7 +102,7 @@ export default function Week03Page() {
       {/* ───────────────────────────────────────────────────────────── */}
       <section id="task-01" className="mt-28 scroll-mt-24">
         <SectionHeading
-          eyebrow="// assignment_01"
+          eyebrow="// 01_image_curation"
           title="01 — Curate Your Images"
           description="Evidence requires authenticity. Real work is proven exclusively with real screenshots. AI visuals are strictly reserved for atmospheric decoration."
         />
@@ -246,7 +246,7 @@ export default function Week03Page() {
       {/* ───────────────────────────────────────────────────────────── */}
       <section id="task-02" className="mt-28 scroll-mt-24">
         <SectionHeading
-          eyebrow="// assignment_02"
+          eyebrow="// 02_through_line"
           title="02 — The Through-Line"
           description="Every page, project card, and button reinforces one central narrative and guides the visitor toward contact."
         />
@@ -389,7 +389,7 @@ export default function Week03Page() {
       {/* ───────────────────────────────────────────────────────────── */}
       <section id="task-03" className="mt-28 scroll-mt-24">
         <SectionHeading
-          eyebrow="// assignment_03"
+          eyebrow="// 03_visual_judgment"
           title="03 — Visual Judgment"
           description="Design frames the work; it does not compete with the work. Every color, font, spacing unit, and motion effect is documented."
         />
