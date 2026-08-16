@@ -13,7 +13,7 @@ export function FeaturedProjects() {
       <SectionHeading
         eyebrow="// 01_proof"
         title="Featured builds"
-        description="Three of five shipped systems. Each one solves a real access problem, not a toy dataset."
+        description="Shipped systems and live applications. Each one solves a real problem, from API discovery to predictive models."
       />
 
       <div className="mt-12 grid gap-6 md:grid-cols-3">
@@ -53,7 +53,7 @@ export function FeaturedProjects() {
           to="/projects"
           className="inline-flex items-center gap-2 font-mono text-sm uppercase tracking-wider text-accent-soft hover:text-signal"
         >
-          View all 5 projects <ArrowUpRight size={14} aria-hidden="true" />
+          View all {projects.length} projects <ArrowUpRight size={14} aria-hidden="true" />
         </Link>
       </div>
     </section>

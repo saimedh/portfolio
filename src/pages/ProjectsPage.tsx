@@ -20,9 +20,8 @@ export default function ProjectsPage() {
         <span className="eyebrow">// build_log</span>
         <h1 className="mt-3 text-4xl font-semibold text-ink sm:text-5xl">Projects</h1>
         <p className="mt-4 text-lg text-ink-muted">
-          Five systems. Each one covers the full path — problem, architecture,
-          deployed result, and what broke along the way. This is the evidence
-          behind "production-ready."
+          Shipped systems and live applications. Each one covers the full path —
+          problem, architecture, deployed result, and key technical decisions.
         </p>
       </motion.div>
 

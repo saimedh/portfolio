@@ -68,9 +68,9 @@ export function Hero() {
             <span className="h-2.5 w-2.5 rounded-full bg-[#5B616D]/60" />
             <span className="ml-2 text-ink-faint">build.log</span>
           </div>
-          <p><span className="text-signal">✓</span> crime-prediction-system — deployed</p>
-          <p><span className="text-signal">✓</span> paverasa-ai — live, 400+ queries served</p>
-          <p><span className="text-signal">✓</span> health-navigator-ai — deployed, 0 safety incidents</p>
+          <p><span className="text-signal">✓</span> api-emporium (freekeys) — live, 90+ free tiers</p>
+          <p><span className="text-signal">✓</span> vedha-ai — live, fast conversational assistant</p>
+          <p><span className="text-signal">✓</span> matchcine — live, taste matching engine</p>
           <p className="text-ink-faint">running 2 more…</p>
         </motion.div>
       </div>

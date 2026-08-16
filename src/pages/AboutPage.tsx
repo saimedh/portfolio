@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Download } from "lucide-react";
-import { experience, certifications, timeline, skillGroups } from "../data/profile";
+import { experience, certifications, timeline, skillGroups, bio } from "../data/profile";
 import { useDocumentMeta } from "../hooks/useDocumentMeta";
 import { SectionHeading } from "../components/shared/SectionHeading";
 import { LinkButton } from "../components/ui/LinkButton";
@@ -10,7 +10,7 @@ import { BeforeAfter } from "../components/shared/BeforeAfter";
 export default function AboutPage() {
   useDocumentMeta(
     "About — Saimedh Porandla",
-    "AI software engineer with 5 shipped end-to-end AI applications. Education, experience, certifications, and timeline."
+    "AI software engineer with shipped end-to-end AI applications. Education, experience, certifications, and timeline."
   );
 
   return (
@@ -25,10 +25,7 @@ export default function AboutPage() {
           <span className="eyebrow">// about</span>
           <h1 className="mt-3 text-4xl font-semibold text-ink sm:text-5xl">Saimedh Porandla</h1>
           <p className="mt-6 max-w-2xl text-lg text-ink-muted">
-            [NEEDS MY INPUT: Replace with your actual bio. Include: Who you are, 
-            what you build, your technical interests, and what problems you like solving. 
-            Keep it specific and natural. Avoid generic phrases like "passionate developer" 
-            or "cutting-edge technology".]
+            {bio}
           </p>
         </div>
 

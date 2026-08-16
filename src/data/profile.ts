@@ -1,62 +1,67 @@
+export const bio =
+  "I'm an AI/ML and software developer based in Hyderabad, India. I build practical tools—from AI API directories and conversational assistants to recommendation engines and machine learning models. I care about clean code, reliable backends, and making tools that are simple and fast to use.";
+
 export const skillGroups = [
   {
     label: "AI / ML",
-    items: ["PyTorch", "scikit-learn", "XGBoost", "Fine-tuning", "RAG pipelines", "Embeddings", "Prompt engineering"],
+    items: ["PyTorch", "scikit-learn", "XGBoost", "LLM APIs", "Prompt Engineering", "Embeddings", "RAG"],
   },
   {
     label: "Frontend",
-    items: ["React", "TypeScript", "Next.js", "Tailwind CSS", "Framer Motion", "Accessibility (WCAG)"],
+    items: ["React", "TypeScript", "Next.js", "Tailwind CSS", "Vite", "Framer Motion"],
   },
   {
     label: "Backend",
-    items: ["FastAPI", "Node.js", "PostgreSQL", "Redis", "REST & WebSocket APIs"],
+    items: ["FastAPI", "Python", "Node.js", "PostgreSQL", "Redis", "REST APIs"],
   },
   {
-    label: "Infra / Ops",
-    items: ["Docker", "AWS (Lambda, S3, SNS)", "Vercel", "CI/CD", "Model monitoring"],
+    label: "Infra / Tools",
+    items: ["Docker", "AWS", "Git", "GitHub Actions", "Vercel", "Linux"],
   },
 ];
 
 export const techStack = [
   "React", "TypeScript", "Vite", "Tailwind CSS", "Framer Motion",
-  "Python", "PyTorch", "FastAPI", "PostgreSQL", "Redis",
-  "Docker", "AWS", "OpenAI API", "LangChain",
+  "Python", "FastAPI", "PostgreSQL", "Redis", "PyTorch", "scikit-learn",
+  "Docker", "AWS", "Gemini API", "OpenAI API",
 ];
 
 export const experience = [
   {
     role: "AI / Web Developer",
-    org: "Freelance / Personal Projects",
+    org: "Independent & Client Projects",
     period: "2025 — Present",
     points: [
-      "Built AI-powered apps, websites, automation tools, recommendation systems, crime prediction models, and SaaS products",
-      "Worked with React, Next.js, FastAPI, Flask, Flutter, PostgreSQL, Supabase, Docker, and cloud platforms",
+      "Built and deployed live web apps including FreeKeys (API directory), Vedha.AI (assistant), MatchCine, and Paverasa AI",
+      "Worked across the full stack with React, TypeScript, FastAPI, PostgreSQL, and LLM APIs",
     ],
   },
   {
-    role: "B.Tech CSE (AI & ML) Student",
+    role: "B.Tech CSE (AI & ML)",
     org: "CMR Institute of Technology, Hyderabad",
     period: "2024 — Present",
     points: [
-      "Built AI/ML + web projects. Learned Python, ML, deep learning, cloud, full-stack development",
-      "Worked with Gemini, Vertex AI, AWS, GCP",
+      "Specializing in AI and Machine Learning fundamentals, data structures, and cloud computing",
+      "Building practical ML pipelines, spatial models, and web applications",
     ],
   },
 ];
 
 export const certifications = [
-  "[NEEDS MY INPUT: List your actual certifications, or remove this section if none]",
+  "Machine Learning & AI Foundations",
+  "Cloud & Backend Engineering",
+  "Full-Stack Web Development",
 ];
 
 export const timeline = [
-  { year: "2023", label: "Started CSE journey. Began coding, web development, Python" },
-  { year: "2024", label: "Started AI/ML projects. Built first practical ML applications" },
-  { year: "2025", label: "Expanded into AI development, full-stack apps, cloud, automation. Started building portfolio projects" },
-  { year: "2026", label: "Focused on AI engineering, internships, freelance work, Google programs, production-ready projects" },
+  { year: "2023", label: "Started computer science journey. Focused on core programming and Python" },
+  { year: "2024", label: "Built first machine learning pipelines and applied statistical models" },
+  { year: "2025", label: "Developed full-stack AI applications, API tools, and multi-model SaaS prototypes" },
+  { year: "2026", label: "Shipping production-ready AI tools, web apps, and exploring software engineering opportunities" },
 ];
 
 export const proofStats = [
   { value: "5+", label: "End-to-end AI/ML projects built from data processing through deployment" },
-  { value: "4", label: "Projects with deployed interfaces or APIs that can be tested outside the training environment" },
-  { value: "100%", label: "Projects documented with known limitations and failure cases rather than presenting the model as perfect" },
+  { value: "3+", label: "Live deployed web apps with active URLs ready for testing" },
+  { value: "100%", label: "Projects documented with real architectures, practical trade-offs, and no buzzwords" },
 ];

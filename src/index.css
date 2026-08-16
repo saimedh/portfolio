@@ -12,20 +12,20 @@
     @apply bg-bg text-ink;
   }
   ::selection {
-    @apply bg-accent/40 text-white;
+    @apply bg-accent/35 text-white;
   }
   :focus-visible {
-    outline: 2px solid #6E56CF;
+    outline: 2px solid #6366F1;
     outline-offset: 3px;
     border-radius: 4px;
   }
   h1, h2, h3, h4 {
-    @apply font-display tracking-tight;
+    @apply font-display tracking-tight text-ink;
   }
   ::-webkit-scrollbar { width: 10px; }
-  ::-webkit-scrollbar-track { background: #0A0B0F; }
-  ::-webkit-scrollbar-thumb { background: #23262E; border-radius: 8px; }
-  ::-webkit-scrollbar-thumb:hover { background: #3D3164; }
+  ::-webkit-scrollbar-track { background: #090A0F; }
+  ::-webkit-scrollbar-thumb { background: #202430; border-radius: 8px; }
+  ::-webkit-scrollbar-thumb:hover { background: #312E81; }
 }
 
 @layer utilities {
