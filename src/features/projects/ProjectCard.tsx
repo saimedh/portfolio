@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
-import { Code2, ExternalLink, ArrowRight } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Code2, ExternalLink } from "lucide-react";
 import type { Project } from "../../data/projects";
 import { StatusBadge } from "../../components/ui/StatusBadge";
 import { LinkButton } from "../../components/ui/LinkButton";
@@ -102,17 +101,11 @@ export function ProjectCard({ project, index }: { project: Project; index: numbe
       </div>
 
       <div className="mt-8 flex flex-wrap gap-3 border-t border-bg-border pt-6">
-        <Link
-          to={`/projects/${project.slug}`}
-          className="inline-flex items-center gap-2 rounded-lg border border-bg-border bg-bg-raised px-5 py-3 text-sm font-medium text-ink transition-all hover:border-accent/50 hover:bg-bg-surface active:scale-[0.98]"
-        >
-          Read full case study <ArrowRight size={16} aria-hidden="true" />
-        </Link>
         <LinkButton href={project.github} variant="secondary" icon={<Code2 size={16} aria-hidden="true" />}>
           View source
         </LinkButton>
         {project.demo && (
-          <LinkButton href={project.demo} variant="ghost" icon={<ExternalLink size={16} aria-hidden="true" />}>
+          <LinkButton href={project.demo} variant="primary" icon={<ExternalLink size={16} aria-hidden="true" />}>
             Live demo
           </LinkButton>
         )}
@@ -120,4 +113,3 @@ export function ProjectCard({ project, index }: { project: Project; index: numbe
     </motion.article>
   );
 }
-
