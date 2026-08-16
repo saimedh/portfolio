@@ -25,19 +25,21 @@ export const techStack = [
 
 export const experience = [
   {
-    role: "[NEEDS MY INPUT: Your role/title]",
-    org: "[NEEDS MY INPUT: Organization name]",
-    period: "[NEEDS MY INPUT: Time period, e.g., '2024 — Present']",
+    role: "AI / Web Developer",
+    org: "Freelance / Personal Projects",
+    period: "2025 — Present",
     points: [
-      "[NEEDS MY INPUT: What you did, what you learned, what you built]",
+      "Built AI-powered apps, websites, automation tools, recommendation systems, crime prediction models, and SaaS products",
+      "Worked with React, Next.js, FastAPI, Flask, Flutter, PostgreSQL, Supabase, Docker, and cloud platforms",
     ],
   },
   {
-    role: "[NEEDS MY INPUT: Your role/title]",
-    org: "[NEEDS MY INPUT: Organization name]",
-    period: "[NEEDS MY INPUT: Time period]",
+    role: "B.Tech CSE (AI & ML) Student",
+    org: "CMR Institute of Technology, Hyderabad",
+    period: "2024 — Present",
     points: [
-      "[NEEDS MY INPUT: What you did, what you learned, what you built]",
+      "Built AI/ML + web projects. Learned Python, ML, deep learning, cloud, full-stack development",
+      "Worked with Gemini, Vertex AI, AWS, GCP",
     ],
   },
 ];
