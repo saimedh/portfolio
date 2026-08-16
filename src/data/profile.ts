@@ -49,9 +49,10 @@ export const certifications = [
 ];
 
 export const timeline = [
-  { year: "[YEAR]", label: "[NEEDS MY INPUT: Key milestone in your journey]" },
-  { year: "[YEAR]", label: "[NEEDS MY INPUT: Key milestone in your journey]" },
-  { year: "[YEAR]", label: "[NEEDS MY INPUT: Key milestone in your journey]" },
+  { year: "2023", label: "Started CSE journey. Began coding, web development, Python" },
+  { year: "2024", label: "Started AI/ML projects. Built first practical ML applications" },
+  { year: "2025", label: "Expanded into AI development, full-stack apps, cloud, automation. Started building portfolio projects" },
+  { year: "2026", label: "Focused on AI engineering, internships, freelance work, Google programs, production-ready projects" },
 ];
 
 export const proofStats = [
