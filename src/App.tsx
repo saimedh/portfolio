@@ -14,6 +14,7 @@ export default function App() {
       <Route element={<RootLayout />}>
         <Route path="/" element={<HomePage />} />
         <Route path="/projects" element={<ProjectsPage />} />
+        <Route path="/projects/vedha-ai" element={<PaverasaCaseStudyPage />} />
         <Route path="/projects/paverasa-ai" element={<PaverasaCaseStudyPage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/process" element={<Week03Page />} />

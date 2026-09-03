@@ -34,7 +34,7 @@ export function HomeCTA() {
             to="/contact"
             className="mt-8 inline-flex items-center gap-2 rounded-lg bg-accent px-7 py-3.5 text-sm font-semibold text-white shadow-xs transition-all hover:bg-accent-dim hover:shadow-sm active:scale-[0.98]"
           >
-            Invite me for an internship interview <ArrowRight size={16} aria-hidden="true" />
+            Start a Conversation <ArrowRight size={16} aria-hidden="true" />
           </Link>
         </div>
       </motion.div>

@@ -46,7 +46,7 @@ export function Hero() {
           Not notebooks or brittle prototypes. Six end-to-end systems shipped from data pipelines and model training to deployed, usable interfaces.
         </motion.p>
 
-        {/* Lead with Strongest Project: Paverasa AI Spotlight Card */}
+        {/* Lead with Strongest Project: Vedha AI Spotlight Card */}
         <motion.div
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
@@ -60,11 +60,16 @@ export function Hero() {
                 Lead Project Spotlight
               </span>
               <span className="font-mono text-xs text-ink-faint">·</span>
-              <span className="font-display text-sm font-bold text-ink">Paverasa AI</span>
+              <span className="font-display text-sm font-bold text-ink">Vedha AI</span>
             </div>
-            <span className="rounded-full bg-signal/10 px-2.5 py-0.5 font-mono text-[10px] font-semibold text-signal uppercase tracking-wider">
-              Live MVP
-            </span>
+            <a
+              href="https://vedhai.lovable.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-full bg-signal/10 px-2.5 py-0.5 font-mono text-[10px] font-semibold text-signal uppercase tracking-wider hover:bg-signal/20 transition-colors"
+            >
+              Live Demo ↗
+            </a>
           </div>
           <p className="mt-3 text-sm text-ink-muted leading-relaxed">
             I built an AI workspace that turns one user goal into an executable workflow across 11 integrated tools (FastAPI, Flutter, Redis, Gemini & OpenAI APIs).
@@ -74,7 +79,7 @@ export function Hero() {
               10+ Core Modules · Multi-Model Architecture
             </span>
             <Link
-              to="/projects/paverasa-ai"
+              to="/projects/vedha-ai"
               className="inline-flex items-center gap-1.5 font-mono text-xs font-semibold text-accent hover:text-accent-dim transition-colors"
             >
               Read Deep-Dive Case Study <ArrowRight size={13} />
@@ -99,7 +104,7 @@ export function Hero() {
             to="/contact"
             className="inline-flex items-center gap-2 rounded-lg border border-bg-border bg-bg-surface px-6 py-3.5 text-sm font-semibold text-ink shadow-xs transition-all hover:border-accent/40 hover:bg-bg-raised"
           >
-            Contact Me
+            Start a Conversation
           </Link>
           <LinkButton href="https://github.com/saimedh" variant="secondary" icon={<Code2 size={16} aria-hidden="true" />}>
             GitHub
@@ -119,9 +124,9 @@ export function Hero() {
             <span className="h-2.5 w-2.5 rounded-full bg-[#10B981]/60" />
             <span className="ml-2 text-ink-faint">build.log</span>
           </div>
-          <p><span className="text-signal">✓</span> paverasa-ai — live mvp, 10+ ai modules, autonomous workspace</p>
+          <p><span className="text-signal">✓</span> vedha-ai — live mvp, 10+ ai modules, autonomous workspace</p>
           <p><span className="text-signal">✓</span> crime-prediction-system — deployed, ~93% accuracy</p>
-          <p><span className="text-signal">✓</span> api-emporium (freekeys) — live, 90+ free tiers</p>
+          <p><span className="text-signal">✓</span> health-navigator-ai — deployed, 83% triage match</p>
           <p className="text-ink-faint">running 4 more…</p>
         </motion.div>
       </div>

@@ -25,12 +25,12 @@ export default function ContactPage() {
         transition={{ duration: 0.5 }}
         className="max-w-2xl"
       >
-        <span className="eyebrow">// final_step</span>
+        <span className="eyebrow">// final_conversion</span>
         <h1 className="mt-3 text-4xl font-semibold text-ink sm:text-5xl">
-          Let's talk
+          Start a conversation
         </h1>
         <p className="mt-4 text-lg text-ink-muted">
-          Building an AI product or looking for an AI/ML developer? Let's talk.
+          Building an AI product or hiring an AI/ML engineering intern? Let&rsquo;s connect.
         </p>
       </motion.div>
 

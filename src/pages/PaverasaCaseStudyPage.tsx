@@ -23,7 +23,8 @@ import {
   Zap,
   Clock,
   Boxes,
-  AlertCircle
+  AlertCircle,
+  ExternalLink
 } from "lucide-react";
 import { useDocumentMeta } from "../hooks/useDocumentMeta";
 
@@ -175,8 +176,8 @@ const AGENT_WORKFLOW_STEPS = [
 
 export default function PaverasaCaseStudyPage() {
   useDocumentMeta(
-    "Paverasa AI — AI Productivity Super App Case Study",
-    "Deep dive case study of Paverasa AI: architecture, AI agent workspace, multi-model orchestration, and production engineering."
+    "Vedha AI — AI Productivity Super App Case Study",
+    "Deep dive case study of Vedha AI: architecture, AI agent workspace, multi-model orchestration, and production engineering."
   );
 
   const [activeScreenIndex, setActiveScreenIndex] = useState(0);
@@ -251,7 +252,7 @@ export default function PaverasaCaseStudyPage() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="mt-5 font-display text-4xl font-bold tracking-tight text-[#111827] sm:text-6xl"
             >
-              Paverasa AI
+              Vedha AI
             </motion.h1>
 
             <motion.p
@@ -272,7 +273,7 @@ export default function PaverasaCaseStudyPage() {
               transition={{ duration: 0.5, delay: 0.3 }}
               className="mt-4 max-w-2xl text-base leading-relaxed text-[#6B7280]"
             >
-              Instead of switching between disconnected tools for chat, document analysis, code generation, and landing pages, Paverasa AI consolidates the entire creation pipeline into an autonomous, agent-driven execution engine.
+              Instead of switching between disconnected tools for chat, document analysis, code generation, and landing pages, Vedha AI consolidates the entire creation pipeline into an autonomous, agent-driven execution engine.
             </motion.p>
 
             {/* Tech Stack Chips */}
@@ -311,8 +312,16 @@ export default function PaverasaCaseStudyPage() {
               className="mt-8 flex flex-wrap items-center gap-4"
             >
               <a
-                href="#screens"
+                href="https://vedhai.lovable.app/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 rounded-lg bg-[#FF5722] px-6 py-3.5 text-sm font-semibold text-white shadow-sm transition-all hover:bg-[#EA580C] hover:shadow-md active:scale-[0.98]"
+              >
+                Try Live Demo <ExternalLink size={16} />
+              </a>
+              <a
+                href="#screens"
+                className="inline-flex items-center gap-2 rounded-lg border border-[#D1D5DB] bg-white px-6 py-3.5 text-sm font-semibold text-[#111827] shadow-sm transition-all hover:border-[#9CA3AF] hover:bg-[#F9FAFB]"
               >
                 Explore Screens <ArrowRight size={16} />
               </a>
@@ -323,7 +332,7 @@ export default function PaverasaCaseStudyPage() {
                 className="inline-flex items-center gap-2 rounded-lg border border-[#D1D5DB] bg-white px-6 py-3.5 text-sm font-semibold text-[#111827] shadow-sm transition-all hover:border-[#9CA3AF] hover:bg-[#F9FAFB]"
               >
                 <Code2 size={16} />
-                View GitHub Repository
+                GitHub
               </a>
             </motion.div>
           </div>
@@ -406,7 +415,7 @@ export default function PaverasaCaseStudyPage() {
             A Complete AI Productivity Super App
           </h2>
           <p className="mt-4 max-w-3xl text-lg leading-relaxed text-[#4B5563]">
-            Paverasa AI brings together 11 essential capabilities behind a unified architecture, eliminating tool-switching while retaining high-precision specialized controls.
+            Vedha AI brings together 11 essential capabilities behind a unified architecture, eliminating tool-switching while retaining high-precision specialized controls.
           </p>
 
           <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -675,7 +684,7 @@ export default function PaverasaCaseStudyPage() {
             Real Product Interface Evidence
           </h2>
           <p className="mt-4 max-w-3xl text-lg leading-relaxed text-[#4B5563]">
-            Explore the core screens of Paverasa AI. Every frame is dedicated strictly to real capture evidence—never AI-generated UI mockups or fabricated dashboards.
+            Explore the core screens of Vedha AI. Every frame is dedicated strictly to real capture evidence—never AI-generated UI mockups or fabricated dashboards.
           </p>
 
           {/* Interactive Screen Selector Tabs */}
@@ -1039,21 +1048,20 @@ export default function PaverasaCaseStudyPage() {
             </p>
 
             <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
-              <Link
-                to="/contact"
-                className="inline-flex items-center gap-2 rounded-lg bg-[#FF5722] px-7 py-3.5 text-sm font-semibold text-white shadow-sm transition-all hover:bg-[#EA580C] hover:shadow-md active:scale-[0.98]"
-              >
-                Try Paverasa AI Demo <ArrowRight size={16} />
-              </Link>
               <a
-                href="https://github.com/saimedh"
+                href="https://vedhai.lovable.app/"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 rounded-lg bg-[#FF5722] px-7 py-3.5 text-sm font-semibold text-white shadow-sm transition-all hover:bg-[#EA580C] hover:shadow-md active:scale-[0.98]"
+              >
+                Try Vedha AI Live Demo <ExternalLink size={16} />
+              </a>
+              <Link
+                to="/contact"
                 className="inline-flex items-center gap-2 rounded-lg border border-[#D1D5DB] bg-white px-7 py-3.5 text-sm font-semibold text-[#111827] shadow-sm transition-all hover:border-[#9CA3AF] hover:bg-[#F9FAFB]"
               >
-                <Code2 size={16} />
-                View GitHub
-              </a>
+                Start a Conversation <ArrowRight size={16} />
+              </Link>
             </div>
           </div>
         </section>

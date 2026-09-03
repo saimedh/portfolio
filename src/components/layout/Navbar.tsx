@@ -64,7 +64,7 @@ export function Navbar() {
             to="/contact"
             className="ml-3 rounded-lg bg-accent px-4 py-2 font-body text-sm font-semibold text-white shadow-xs transition-all hover:bg-accent-dim hover:shadow-sm active:scale-[0.98]"
           >
-            Invite to Interview
+            Start a Conversation
           </NavLink>
         </div>
 
@@ -107,7 +107,7 @@ export function Navbar() {
                 to="/contact"
                 className="mt-2 rounded-lg bg-accent px-4 py-2.5 text-center font-body text-sm font-semibold text-white shadow-xs hover:bg-accent-dim"
               >
-                Invite to Interview
+                Start a Conversation
               </NavLink>
             </div>
           </motion.div>

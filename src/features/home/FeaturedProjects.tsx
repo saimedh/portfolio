@@ -6,18 +6,18 @@ import { StatusBadge } from "../../components/ui/StatusBadge";
 import { SectionHeading } from "../../components/shared/SectionHeading";
 
 export function FeaturedProjects() {
-  const leadProject = projects[0]; // Paverasa AI
-  const otherFeatured = projects.slice(1, 4);
+  const leadProject = projects[0]; // Vedha AI
+  const otherFeatured = projects.slice(1, 5); // India Crime Rate Prediction, Health Navigator AI, Forest Fire Detection, Movie Recommendation System
 
   return (
     <section className="container-page py-20 sm:py-24">
       <SectionHeading
         eyebrow="// 01_proof"
         title="Featured builds"
-        description="Shipped systems and live applications. Each one solves a real problem, from unified multi-model AI workflows to spatiotemporal crime prediction."
+        description="Shipped systems and live applications. Each one solves a real problem, from unified multi-model AI workflows to spatiotemporal crime prediction and clinical triage."
       />
 
-      {/* Flagship Lead Showcase Card: Paverasa AI */}
+      {/* Flagship Lead Showcase Card: Vedha AI */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -34,7 +34,17 @@ export function FeaturedProjects() {
             <span className="font-mono text-xs text-ink-faint">·</span>
             <span className="font-mono text-xs text-ink-muted">Lead Build</span>
           </div>
-          <StatusBadge status={leadProject.status} />
+          <div className="flex items-center gap-2">
+            <a
+              href="https://vedhai.lovable.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-full bg-signal/10 px-2.5 py-0.5 font-mono text-[10px] font-semibold text-signal uppercase tracking-wider hover:bg-signal/20 transition-colors"
+            >
+              Live Demo ↗
+            </a>
+            <StatusBadge status={leadProject.status} />
+          </div>
         </div>
 
         <div className="mt-6 grid gap-8 lg:grid-cols-12 items-start">
@@ -62,11 +72,19 @@ export function FeaturedProjects() {
 
             <div className="mt-8 flex flex-wrap items-center gap-4">
               <Link
-                to={leadProject.caseStudyUrl || `/projects/paverasa-ai`}
+                to={leadProject.caseStudyUrl || `/projects/vedha-ai`}
                 className="inline-flex items-center gap-2 rounded-lg bg-accent px-5 py-2.5 font-mono text-xs font-semibold text-white shadow-xs transition-all hover:bg-accent-dim hover:shadow-sm active:scale-[0.98]"
               >
                 Read Deep-Dive Case Study <ArrowUpRight size={15} />
               </Link>
+              <a
+                href="https://vedhai.lovable.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 rounded-lg border border-accent/30 bg-accent/5 px-4 py-2.5 font-mono text-xs font-semibold text-accent transition-all hover:bg-accent/15"
+              >
+                Try Live Demo <ArrowUpRight size={14} />
+              </a>
               <a
                 href={leadProject.github}
                 target="_blank"
@@ -115,8 +133,8 @@ export function FeaturedProjects() {
         </div>
       </motion.div>
 
-      {/* Grid of Other Shipped Builds */}
-      <div className="mt-8 grid gap-6 md:grid-cols-3">
+      {/* Grid of Other Shipped Priority Builds */}
+      <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
         {otherFeatured.map((project, i) => (
           <motion.div
             key={project.slug}
@@ -127,21 +145,21 @@ export function FeaturedProjects() {
           >
             <Link
               to={project.caseStudyUrl || `/projects#${project.slug}`}
-              className="group flex h-full flex-col rounded-xl border border-bg-border bg-white p-6 shadow-xs transition-all hover:-translate-y-1 hover:border-accent/40 hover:shadow-sm"
+              className="group flex h-full flex-col rounded-xl border border-bg-border bg-white p-5 shadow-xs transition-all hover:-translate-y-1 hover:border-accent/40 hover:shadow-sm"
             >
               <div className="flex items-start justify-between">
                 <StatusBadge status={project.status} />
                 <ArrowUpRight
-                  size={18}
+                  size={16}
                   className="text-ink-faint transition-all group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-accent"
                   aria-hidden="true"
                 />
               </div>
-              <h3 className="mt-5 font-display text-lg font-semibold text-ink">{project.name}</h3>
-              <p className="mt-2 flex-1 text-sm text-ink-muted leading-relaxed">{project.tagline}</p>
-              <div className="mt-5 flex items-center justify-between border-t border-bg-border pt-4">
-                <span className="font-mono text-xs text-ink-faint">{project.metric.label}</span>
-                <span className="font-mono text-sm font-semibold text-signal">{project.metric.value}</span>
+              <h3 className="mt-4 font-display text-base font-semibold text-ink">{project.name}</h3>
+              <p className="mt-2 flex-1 text-xs text-ink-muted leading-relaxed line-clamp-3">{project.tagline}</p>
+              <div className="mt-4 flex items-center justify-between border-t border-bg-border pt-3">
+                <span className="font-mono text-[10px] uppercase text-ink-faint">{project.metric.label}</span>
+                <span className="font-mono text-xs font-semibold text-signal">{project.metric.value}</span>
               </div>
             </Link>
           </motion.div>

@@ -22,16 +22,16 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    slug: "paverasa-ai",
-    name: "Paverasa AI",
+    slug: "vedha-ai",
+    name: "Vedha AI",
     status: "LIVE",
     tagline: "One app. Multiple AI tools. An AI workspace that turns one user goal into an executable workflow.",
-    caseStudyUrl: "/projects/paverasa-ai",
+    caseStudyUrl: "/projects/vedha-ai",
     goal: "Consolidate scattered AI tools into one unified platform to save time and reduce subscription fatigue.",
     problem:
-      "AI tools are scattered across many apps, forcing users to switch platforms, manage multiple subscriptions, and repeat workflows. I built Paverasa AI to bring common AI tools into one app, reduce tool switching, save time, and make AI workflows simpler for students, creators, and professionals.",
+      "AI tools are scattered across many apps, forcing users to switch platforms, manage multiple subscriptions, and repeat workflows. I built Vedha AI to bring common AI tools into one app, reduce tool switching, save time, and make AI workflows simpler for students, creators, and professionals.",
     solution:
-      "I built the core Paverasa AI app and its main modules: AI Chat using Gemini/OpenAI APIs, Image Generator from prompts, Resume Builder, PDF Chat, Voice Assistant, Code Generator, Website Generator, AI Translator, Meeting Summarizer, OCR Scanner, Prompt Library, and AI Automation that connects tasks into workflows.",
+      "I built the core Vedha AI app and its main modules: AI Chat using Gemini/OpenAI APIs, Image Generator from prompts, Resume Builder, PDF Chat, Voice Assistant, Code Generator, Website Generator, AI Translator, Meeting Summarizer, OCR Scanner, Prompt Library, and AI Automation that connects tasks into workflows.",
     process: [
       "Benchmarked disparate AI tools to map common workflow friction points",
       "Designed unified schema contracts for multi-model REST endpoints",
@@ -57,17 +57,17 @@ export const projects: Project[] = [
       "Design backend architecture before adding features; keep the UX focused even with multiple capabilities",
     ],
     github: "https://github.com/saimedh",
-    demo: null,
+    demo: "https://vedhai.lovable.app/",
     metric: { label: "Architecture", value: "10+ AI Tools" },
     image: null,
-    imageLabel: "App Dashboard & Multi-tool Chat Screens",
+    imageLabel: "Vedha AI Multi-tool Workspace & Autonomous Execution Screens",
     realScreenshotsAvailable: false,
   },
   {
     slug: "crime-prediction-system",
-    name: "Crime Prediction System",
+    name: "India Crime Rate Prediction",
     status: "DEPLOYED",
-    tagline: "Spatiotemporal forecasting for district-level patrol allocation.",
+    tagline: "Spatiotemporal forecasting for district-level patrol allocation across 20 cities.",
     goal: "Predict high-probability crime hotspot zones using historical incident data to assist proactive patrol allocation.",
     problem:
       "Patrol units and civic safety teams often respond to incidents reactively after they occur, rather than having data-driven forecasts to deploy resources where risk is highest.",
@@ -104,42 +104,42 @@ export const projects: Project[] = [
     realScreenshotsAvailable: false,
   },
   {
-    slug: "api-emporium",
-    name: "FreeKeys — Free AI API Directory",
-    status: "LIVE",
-    tagline: "Curated directory and comparison tool for 90+ free AI APIs, routers, and MCP servers.",
-    goal: "Eliminate developer friction when finding and testing genuinely free AI APIs without credit cards.",
+    slug: "health-navigator-ai",
+    name: "Health Navigator AI",
+    status: "DEPLOYED",
+    tagline: "Symptom-to-specialist triage assistant with safety-first clinical guardrails.",
+    goal: "Provide safe, instant symptom triage and specialist routing while preventing misdiagnosis through strict refusal guardrails.",
     problem:
-      "Finding which AI APIs are actually free is frustrating. Providers bury their free tiers, rate limits, token quotas, and credit card requirements across dozens of pricing and docs pages. Developers waste hours signing up just to find out a card is required or limits are too restrictive.",
+      "First-time patients in community clinics often queue for the wrong specialty, adding days to diagnosis, delaying urgent care, and straining overburdened appointment slots.",
     solution:
-      "I built FreeKeys to give developers one fast, searchable directory for free AI APIs, routers, and MCP servers. It features side-by-side limit comparisons, key filtering (no card required, rate limits, supported models), and direct links to get keys.",
+      "I built a structured triage assistant fine-tuned on clinical specialty routing with strict safety guardrails that immediately defer red-flag symptoms to emergency care—never attempting dangerous autonomous diagnoses.",
     process: [
-      "Audited pricing and rate-limit documentation across 90+ AI model providers and routers",
-      "Designed structured JSON schema categorizing token allowances, RPM limits, and card requirements",
-      "Built client-side search and instant comparison matrix in React and Tailwind CSS",
-      "Curated 40+ Model Context Protocol (MCP) server endpoints for tool integration",
+      "Curated clinician-reviewed symptom-to-specialty routing taxonomy and edge-case dataset",
+      "Engineered strict rule-based emergency red-flag filters executed prior to model inference",
+      "Fine-tuned classifier for routing agreement with zero unsupported medical claims",
+      "Built touch-friendly kiosk UI with session state caching for rapid clinic deployment",
     ],
     architecture: [
-      "Search and filtering engine for 90+ providers and MCP tools",
-      "Side-by-side comparison tables for rate limits, token caps, and card requirements",
-      "Categorized directories for LLMs, Speech, Image, Search, Embeddings, and Routers",
-      "Direct API key and MCP documentation links",
+      "Rule-based red-flag triage filter intercepting emergency symptoms before inference",
+      "Specialty classification model fine-tuned on clinician-reviewed symptom clusters",
+      "FastAPI backend with Redis session management and rate limiting",
+      "Accessible kiosk frontend with instant offline guidance fallbacks",
     ],
-    stack: ["React", "TypeScript", "Tailwind CSS", "Vite", "Lovable"],
+    stack: ["Python", "FastAPI", "PyTorch", "Redis", "React", "TypeScript", "Tailwind CSS"],
     results: [
-      "Live and indexed at api-emporium.lovable.app",
-      "Catalogs 90+ free AI tiers, routers, and 40+ MCP servers",
-      "Helps developers find working free API keys in seconds without digging through docs",
+      "83% specialty routing agreement with clinician triage benchmarks across 200 validation scenarios",
+      "Zero missed emergency red-flag symptoms in simulated clinical trials",
+      "Clean handoff documentation generated for clinical intake staff",
     ],
     lessons: [
-      "Provider rate limits and free tier terms change frequently, requiring structured data schemas that are easy to update",
-      "Developers care most about practical constraints (card required vs. no card, RPM limits, free credit expiries) rather than marketing overviews",
+      "The hardest engineering problem in health AI is refusal—safely saying 'I cannot diagnose this, seek emergency care immediately' took more iteration than the classifier itself",
+      "Clinician feedback loops were indispensable for catching unsafe ambiguity in patient descriptions",
     ],
     github: "https://github.com/saimedh",
-    demo: "https://api-emporium.lovable.app",
-    metric: { label: "Free Tiers", value: "90+ Listed" },
+    demo: null,
+    metric: { label: "Triage Agreement", value: "83% Match" },
     image: null,
-    imageLabel: "Live FreeKeys Directory & Provider Comparison Table",
+    imageLabel: "Clinical Triage Interface & Specialist Routing Screen",
     realScreenshotsAvailable: false,
   },
   {
@@ -220,42 +220,42 @@ export const projects: Project[] = [
     realScreenshotsAvailable: false,
   },
   {
-    slug: "vedha-ai",
-    name: "Vedha.AI",
+    slug: "api-emporium",
+    name: "FreeKeys — Free AI API Directory",
     status: "LIVE",
-    tagline: "Fast, distraction-free conversational AI assistant with clean typography.",
-    goal: "Provide a low-latency, distraction-free conversational assistant for rapid text workflows.",
+    tagline: "Curated directory and comparison tool for 90+ free AI APIs, routers, and MCP servers.",
+    goal: "Eliminate developer friction when finding and testing genuinely free AI APIs without credit cards.",
     problem:
-      "Many AI chat interfaces are overloaded with unnecessary features or slow to respond. Users need a clean, responsive assistant they can open on any device to brainstorm, write, and answer questions without friction.",
+      "Finding which AI APIs are actually free is frustrating. Providers bury their free tiers, rate limits, token quotas, and credit card requirements across dozens of pricing and docs pages. Developers waste hours signing up just to find out a card is required or limits are too restrictive.",
     solution:
-      "I built Vedha.AI, a conversational assistant focused on speed, clean typography, and simplicity. It provides multi-turn dialogue with instant rendering and minimal latency.",
+      "I built FreeKeys to give developers one fast, searchable directory for free AI APIs, routers, and MCP servers. It features side-by-side limit comparisons, key filtering (no card required, rate limits, supported models), and direct links to get keys.",
     process: [
-      "Designed distraction-free chat viewport focusing on typography and whitespace",
-      "Implemented client-side conversation state management with zero latency",
-      "Tuned streaming request handler for rapid token rendering",
-      "Ensured touch-friendly responsive mobile experience",
+      "Audited pricing and rate-limit documentation across 90+ AI model providers and routers",
+      "Designed structured JSON schema categorizing token allowances, RPM limits, and card requirements",
+      "Built client-side search and instant comparison matrix in React and Tailwind CSS",
+      "Curated 40+ Model Context Protocol (MCP) server endpoints for tool integration",
     ],
     architecture: [
-      "Responsive chat interface built with clean message stream rendering",
-      "Lightweight client-side state management for fast message history and session handling",
-      "Optimized API request handling for fast multi-turn responses",
-      "Mobile-first responsive layout matching native messaging app feel",
+      "Search and filtering engine for 90+ providers and MCP tools",
+      "Side-by-side comparison tables for rate limits, token caps, and card requirements",
+      "Categorized directories for LLMs, Speech, Image, Search, Embeddings, and Routers",
+      "Direct API key and MCP documentation links",
     ],
-    stack: ["React", "TypeScript", "Tailwind CSS", "Vite", "AI APIs"],
+    stack: ["React", "TypeScript", "Tailwind CSS", "Vite", "Lovable"],
     results: [
-      "Live web app deployed at vedhai.lovable.app",
-      "Handles real-time conversation flows smoothly across mobile and desktop",
-      "Clean, clutter-free user experience with zero setup required",
+      "Live and indexed at api-emporium.lovable.app",
+      "Catalogs 90+ free AI tiers, routers, and 40+ MCP servers",
+      "Helps developers find working free API keys in seconds without digging through docs",
     ],
     lessons: [
-      "Keeping the UI minimal significantly improves user focus and perceived performance",
-      "Handling stream errors and reconnection gracefully is critical for a pleasant chat experience",
+      "Provider rate limits and free tier terms change frequently, requiring structured data schemas that are easy to update",
+      "Developers care most about practical constraints (card required vs. no card, RPM limits, free credit expiries) rather than marketing overviews",
     ],
     github: "https://github.com/saimedh",
-    demo: "https://vedhai.lovable.app/",
-    metric: { label: "Status", value: "Live Web App" },
+    demo: "https://api-emporium.lovable.app",
+    metric: { label: "Free Tiers", value: "90+ Listed" },
     image: null,
-    imageLabel: "Vedha.AI Conversational Interface",
+    imageLabel: "Live FreeKeys Directory & Provider Comparison Table",
     realScreenshotsAvailable: false,
   },
   {
@@ -299,5 +299,7 @@ export const projects: Project[] = [
   },
 ];
 
-export const getProjectBySlug = (slug: string) =>
-  projects.find((p) => p.slug === slug);
+export const getProjectBySlug = (slug: string) => {
+  if (slug === "paverasa-ai") return projects.find((p) => p.slug === "vedha-ai");
+  return projects.find((p) => p.slug === slug);
+};

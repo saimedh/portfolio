@@ -32,7 +32,7 @@ export const experience = [
     org: "Independent & Client Projects",
     period: "2025 — Present",
     points: [
-      "Built and deployed live web apps including FreeKeys (API directory), Vedha.AI (assistant), MatchCine, and Paverasa AI",
+      "Built and deployed live web apps including Vedha AI (workspace super-app), FreeKeys (API directory), and MatchCine",
       "Worked across the full stack with React, TypeScript, FastAPI, PostgreSQL, and LLM APIs",
     ],
   },
