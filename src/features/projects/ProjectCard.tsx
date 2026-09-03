@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import { Code2, ExternalLink, Image as ImageIcon, ArrowRight } from "lucide-react";
 import type { Project } from "../../data/projects";
 import { StatusBadge } from "../../components/ui/StatusBadge";
@@ -19,7 +20,17 @@ export function ProjectCard({ project, index, nextProjectSlug }: { project: Proj
           <span className="font-mono text-xs text-ink-faint">{String(index + 1).padStart(2, "0")}</span>
           <h3 className="font-display text-2xl font-semibold text-ink">{project.name}</h3>
         </div>
-        <StatusBadge status={project.status} />
+        <div className="flex items-center gap-2">
+          {project.caseStudyUrl && (
+            <Link
+              to={project.caseStudyUrl}
+              className="inline-flex items-center gap-1.5 rounded-full border border-[#FF5722]/30 bg-[#FF5722]/10 px-3 py-1 font-mono text-xs font-medium text-[#FF5722] hover:bg-[#FF5722]/20 transition-colors"
+            >
+              Deep Dive <ArrowRight size={12} />
+            </Link>
+          )}
+          <StatusBadge status={project.status} />
+        </div>
       </div>
 
       <p className="mt-3 max-w-2xl text-ink-muted leading-relaxed">{project.tagline}</p>
@@ -154,7 +165,15 @@ export function ProjectCard({ project, index, nextProjectSlug }: { project: Proj
 
       {/* Action Links & CTA Progression */}
       <div className="mt-8 flex flex-wrap items-center justify-between gap-4 border-t border-bg-border pt-6">
-        <div className="flex flex-wrap gap-3">
+        <div className="flex flex-wrap items-center gap-3">
+          {project.caseStudyUrl && (
+            <Link
+              to={project.caseStudyUrl}
+              className="inline-flex items-center gap-2 rounded-lg bg-[#FF5722] px-4 py-2.5 font-mono text-xs font-semibold text-white shadow-sm transition-all hover:bg-[#EA580C] hover:shadow-md active:scale-[0.98]"
+            >
+              Read Full Case Study <ArrowRight size={14} aria-hidden="true" />
+            </Link>
+          )}
           <LinkButton href={project.github} variant="secondary" icon={<Code2 size={16} aria-hidden="true" />}>
             View source
           </LinkButton>

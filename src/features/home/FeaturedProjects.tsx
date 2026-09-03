@@ -26,7 +26,7 @@ export function FeaturedProjects() {
             transition={{ duration: 0.5, delay: i * 0.1 }}
           >
             <Link
-              to={`/projects#${project.slug}`}
+              to={project.caseStudyUrl || `/projects#${project.slug}`}
               className="group flex h-full flex-col rounded-xl border border-bg-border bg-bg-surface p-6 transition-all hover:-translate-y-1 hover:border-accent/50 hover:shadow-glow"
             >
               <div className="flex items-start justify-between">

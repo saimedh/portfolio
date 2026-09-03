@@ -17,6 +17,7 @@ export interface Project {
   image: string | null;
   imageLabel: string;
   realScreenshotsAvailable: boolean;
+  caseStudyUrl?: string;
 }
 
 export const projects: Project[] = [
@@ -24,7 +25,8 @@ export const projects: Project[] = [
     slug: "paverasa-ai",
     name: "Paverasa AI",
     status: "LIVE",
-    tagline: "All-in-one AI platform combining chat, image generation, resume building, OCR, and automation.",
+    tagline: "One app. Multiple AI tools. An AI workspace that turns one user goal into an executable workflow.",
+    caseStudyUrl: "/projects/paverasa-ai",
     goal: "Consolidate scattered AI tools into one unified platform to save time and reduce subscription fatigue.",
     problem:
       "AI tools are scattered across many apps, forcing users to switch platforms, manage multiple subscriptions, and repeat workflows. I built Paverasa AI to bring common AI tools into one app, reduce tool switching, save time, and make AI workflows simpler for students, creators, and professionals.",
