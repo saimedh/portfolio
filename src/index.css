@@ -12,10 +12,10 @@
     @apply bg-bg text-ink;
   }
   ::selection {
-    @apply bg-accent/35 text-white;
+    @apply bg-accent/20 text-accent-dim;
   }
   :focus-visible {
-    outline: 2px solid #6366F1;
+    outline: 2px solid #FF5722;
     outline-offset: 3px;
     border-radius: 4px;
   }
@@ -23,24 +23,24 @@
     @apply font-display tracking-tight text-ink;
   }
   ::-webkit-scrollbar { width: 10px; }
-  ::-webkit-scrollbar-track { background: #090A0F; }
-  ::-webkit-scrollbar-thumb { background: #202430; border-radius: 8px; }
-  ::-webkit-scrollbar-thumb:hover { background: #312E81; }
+  ::-webkit-scrollbar-track { background: #FAFAFA; }
+  ::-webkit-scrollbar-thumb { background: #D1D5DB; border-radius: 8px; }
+  ::-webkit-scrollbar-thumb:hover { background: #9CA3AF; }
 }
 
 @layer utilities {
   .glass {
-    @apply bg-bg-raised/60 backdrop-blur-xl border border-bg-border;
+    @apply bg-white/90 backdrop-blur-md border border-bg-border shadow-xs;
   }
   .eyebrow {
-    @apply font-mono text-xs uppercase tracking-[0.2em] text-signal;
+    @apply font-mono text-xs uppercase tracking-[0.2em] text-accent font-semibold;
   }
   .container-page {
     @apply mx-auto max-w-6xl px-6 sm:px-8;
   }
   .grain {
-    background-image: radial-gradient(rgba(255,255,255,0.035) 1px, transparent 1px);
-    background-size: 3px 3px;
+    background-image: radial-gradient(rgba(0,0,0,0.035) 1px, transparent 1px);
+    background-size: 4px 4px;
   }
 }
 

@@ -74,7 +74,7 @@ export function BeforeAfter() {
             </div>
 
             <div className="rounded-lg bg-bg-surface p-3.5 font-mono text-xs text-ink-muted border border-bg-border/50">
-              <span className="text-accent-soft">// What changed: </span>
+              <span className="text-accent font-semibold">// What changed: </span>
               {item.points.join(" · ")}
             </div>
           </div>

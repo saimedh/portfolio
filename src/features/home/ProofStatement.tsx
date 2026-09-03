@@ -3,7 +3,7 @@ import { proofStats } from "../../data/profile";
 
 export function ProofStatement() {
   return (
-    <section className="border-y border-bg-border bg-bg-surface/40">
+    <section className="border-y border-bg-border bg-white">
       <div className="container-page py-16">
         <motion.p
           initial={{ opacity: 0, y: 10 }}

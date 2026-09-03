@@ -25,7 +25,7 @@ export function Testimonials() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: i * 0.1 }}
-            className="flex flex-col gap-3 rounded-xl border border-dashed border-bg-border bg-bg-surface/50 p-6"
+            className="flex flex-col gap-3 rounded-xl border border-dashed border-bg-border bg-white p-6 shadow-xs"
           >
             <MessageSquareQuote size={20} className="text-ink-faint" aria-hidden="true" />
             <p className="font-mono text-xs uppercase tracking-wider text-warn">pending write-up</p>

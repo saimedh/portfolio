@@ -6,26 +6,26 @@ export default {
     extend: {
       colors: {
         bg: {
-          DEFAULT: "#090A0F",
-          surface: "#11131A",
-          raised: "#181B24",
-          border: "#202430",
+          DEFAULT: "#FAFAFA",
+          surface: "#FFFFFF",
+          raised: "#F3F4F6",
+          border: "#E5E7EB",
         },
         ink: {
-          DEFAULT: "#F3F4F6",
-          muted: "#94A3B8",
-          faint: "#525866",
+          DEFAULT: "#111827",
+          muted: "#4B5563",
+          faint: "#9CA3AF",
         },
         accent: {
-          DEFAULT: "#6366F1",
-          soft: "#818CF8",
-          dim: "#312E81",
+          DEFAULT: "#FF5722",
+          soft: "#FF7A50",
+          dim: "#EA580C",
         },
         signal: {
-          DEFAULT: "#10B981",
-          soft: "#34D399",
+          DEFAULT: "#16A34A",
+          soft: "#22C55E",
         },
-        warn: "#F59E0B",
+        warn: "#D97706",
       },
       fontFamily: {
         display: ["'Space Grotesk'", "sans-serif"],
@@ -34,12 +34,12 @@ export default {
       },
       backgroundImage: {
         "grid-fade":
-          "linear-gradient(to bottom, rgba(99,102,241,0.06), transparent 60%)",
+          "linear-gradient(to bottom, rgba(255,87,34,0.04), transparent 60%)",
         "radial-glow":
-          "radial-gradient(circle at 50% 0%, rgba(99,102,241,0.15), transparent 55%)",
+          "radial-gradient(circle at 50% 0%, rgba(255,87,34,0.08), transparent 55%)",
       },
       boxShadow: {
-        glow: "0 0 35px rgba(99,102,241,0.22)",
+        glow: "0 2px 20px rgba(255,87,34,0.18)",
       },
       animation: {
         "pulse-slow": "pulse 3s cubic-bezier(0.4,0,0.6,1) infinite",

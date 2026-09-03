@@ -3,7 +3,7 @@ import { techStack } from "../../data/profile";
 
 export function TechStack() {
   return (
-    <section className="border-y border-bg-border bg-bg-surface/40 py-14">
+    <section className="border-y border-bg-border bg-white py-14">
       <p className="container-page eyebrow mb-6">// 03_stack</p>
       <div className="relative overflow-hidden">
         <div className="pointer-events-none absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-bg to-transparent z-10" />

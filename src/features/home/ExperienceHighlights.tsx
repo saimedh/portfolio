@@ -24,7 +24,7 @@ export function ExperienceHighlights() {
             <div>
               <p className="font-mono text-xs text-ink-faint">{item.period}</p>
               <p className="mt-1 font-display font-semibold text-ink">{item.role}</p>
-              <p className="text-sm text-accent-soft">{item.org}</p>
+              <p className="text-sm text-accent font-medium">{item.org}</p>
             </div>
             <ul className="space-y-1.5">
               {item.points.map((point) => (

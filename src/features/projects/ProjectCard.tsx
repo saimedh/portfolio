@@ -13,18 +13,18 @@ export function ProjectCard({ project, index, nextProjectSlug }: { project: Proj
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-80px" }}
       transition={{ duration: 0.5 }}
-      className="scroll-mt-24 rounded-2xl border border-bg-border bg-bg-surface p-6 sm:p-10"
+      className="scroll-mt-24 rounded-2xl border border-bg-border bg-white p-6 sm:p-10 shadow-xs transition-all hover:border-accent/40 hover:shadow-sm"
     >
       <div className="flex flex-wrap items-center justify-between gap-3">
         <div className="flex items-center gap-3">
-          <span className="font-mono text-xs text-ink-faint">{String(index + 1).padStart(2, "0")}</span>
-          <h3 className="font-display text-2xl font-semibold text-ink">{project.name}</h3>
+          <span className="font-mono text-xs font-bold text-ink-faint">{String(index + 1).padStart(2, "0")}</span>
+          <h3 className="font-display text-2xl font-bold text-ink">{project.name}</h3>
         </div>
         <div className="flex items-center gap-2">
           {project.caseStudyUrl && (
             <Link
               to={project.caseStudyUrl}
-              className="inline-flex items-center gap-1.5 rounded-full border border-[#FF5722]/30 bg-[#FF5722]/10 px-3 py-1 font-mono text-xs font-medium text-[#FF5722] hover:bg-[#FF5722]/20 transition-colors"
+              className="inline-flex items-center gap-1.5 rounded-full border border-accent/30 bg-accent/10 px-3 py-1 font-mono text-xs font-semibold text-accent hover:bg-accent/20 transition-colors"
             >
               Deep Dive <ArrowRight size={12} />
             </Link>
@@ -49,15 +49,15 @@ export function ProjectCard({ project, index, nextProjectSlug }: { project: Proj
       </div>
 
       {/* 03 Real Work Screenshot Slot (Task 01) */}
-      <div className="mt-8 overflow-hidden rounded-xl border border-bg-border bg-bg-raised">
-        <div className="flex items-center justify-between border-b border-bg-border px-4 py-2.5">
+      <div className="mt-8 overflow-hidden rounded-xl border border-bg-border bg-[#F9FAFB]">
+        <div className="flex items-center justify-between border-b border-bg-border px-4 py-2.5 bg-bg-raised">
           <div className="flex items-center gap-1.5">
-            <span className="h-2.5 w-2.5 rounded-full bg-[#5B616D]/60" />
-            <span className="h-2.5 w-2.5 rounded-full bg-[#5B616D]/60" />
-            <span className="h-2.5 w-2.5 rounded-full bg-[#5B616D]/60" />
+            <span className="h-2.5 w-2.5 rounded-full bg-[#EF4444]/70" />
+            <span className="h-2.5 w-2.5 rounded-full bg-[#F59E0B]/70" />
+            <span className="h-2.5 w-2.5 rounded-full bg-[#10B981]/70" />
             <span className="ml-2 font-mono text-[11px] text-ink-faint">{project.slug}.view</span>
           </div>
-          <span className="font-mono text-[10px] uppercase tracking-wider text-accent-soft">
+          <span className="font-mono text-[10px] font-semibold uppercase tracking-wider text-accent">
             {project.image ? "Real Project Capture" : "Real Screenshot Slot"}
           </span>
         </div>
@@ -69,20 +69,20 @@ export function ProjectCard({ project, index, nextProjectSlug }: { project: Proj
               alt={`${project.name} interface capture`}
               className="w-full object-cover max-h-96"
             />
-            <div className="absolute bottom-2 right-2 rounded bg-black/80 px-2 py-1 font-mono text-[10px] text-signal">
+            <div className="absolute bottom-2 right-2 rounded bg-black/80 px-2 py-1 font-mono text-[10px] text-signal font-semibold">
               REAL CAPTURE
             </div>
           </div>
         ) : (
-          <div className="flex flex-col items-center justify-center p-10 text-center bg-bg-surface/60 border-dashed border-2 border-bg-border/60 m-3 rounded-lg">
+          <div className="flex flex-col items-center justify-center p-10 text-center bg-white border-dashed border-2 border-bg-border m-3 rounded-lg">
             <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-bg-raised text-ink-faint">
               <ImageIcon size={24} />
             </div>
-            <p className="mt-3 font-mono text-sm font-semibold tracking-wider text-accent-soft">
+            <p className="mt-3 font-mono text-sm font-bold tracking-wider text-accent">
               REAL SCREENSHOT NEEDED
             </p>
             <p className="mt-1 font-mono text-xs text-ink-muted">
-              Replace with actual project capture: <span className="text-ink">{project.imageLabel}</span>
+              Replace with actual project capture: <span className="text-ink font-semibold">{project.imageLabel}</span>
             </p>
             <p className="mt-2 font-mono text-[11px] text-ink-faint">
               (Rule: Never fabricate AI mockups to prove real work)
@@ -93,8 +93,8 @@ export function ProjectCard({ project, index, nextProjectSlug }: { project: Proj
         {/* Live Metrics & Status Banner */}
         <div className="grid grid-cols-3 gap-px bg-bg-border p-px">
           {[project.metric, { label: "Deployment", value: project.status }, { label: "Stack Size", value: `${project.stack.length} tools` }].map((m) => (
-            <div key={m.label} className="bg-bg-surface p-4 text-center">
-              <p className="font-mono text-lg font-semibold text-signal sm:text-xl">{m.value}</p>
+            <div key={m.label} className="bg-white p-4 text-center">
+              <p className="font-mono text-lg font-bold text-signal sm:text-xl">{m.value}</p>
               <p className="mt-1 font-mono text-[10px] uppercase tracking-wider text-ink-faint">{m.label}</p>
             </div>
           ))}
@@ -108,7 +108,7 @@ export function ProjectCard({ project, index, nextProjectSlug }: { project: Proj
           <ul className="mt-3 space-y-2">
             {project.process.map((step, sIdx) => (
               <li key={sIdx} className="flex gap-2 text-xs text-ink-muted">
-                <span className="font-mono text-accent-soft font-semibold">{sIdx + 1}.</span> {step}
+                <span className="font-mono text-accent font-semibold">{sIdx + 1}.</span> {step}
               </li>
             ))}
           </ul>
@@ -118,7 +118,7 @@ export function ProjectCard({ project, index, nextProjectSlug }: { project: Proj
           <ul className="mt-3 space-y-2">
             {project.architecture.map((line) => (
               <li key={line} className="flex gap-2 font-mono text-xs text-ink-muted">
-                <span className="text-accent-soft">$</span> {line}
+                <span className="text-accent">$</span> {line}
               </li>
             ))}
           </ul>
@@ -187,7 +187,7 @@ export function ProjectCard({ project, index, nextProjectSlug }: { project: Proj
         {nextProjectSlug && (
           <a
             href={`#${nextProjectSlug}`}
-            className="inline-flex items-center gap-1.5 font-mono text-xs uppercase tracking-wider text-accent-soft hover:text-signal transition-colors"
+            className="inline-flex items-center gap-1.5 font-mono text-xs uppercase tracking-wider text-accent hover:text-accent-dim transition-colors font-semibold"
           >
             Next case study <ArrowRight size={14} aria-hidden="true" />
           </a>

@@ -39,7 +39,7 @@ export default function ContactPage() {
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.1 }}
-          className="rounded-2xl border border-bg-border bg-bg-surface p-6 sm:p-8"
+          className="rounded-2xl border border-bg-border bg-white p-6 sm:p-8 shadow-xs"
         >
           <ContactForm />
         </motion.div>
@@ -56,9 +56,9 @@ export default function ContactPage() {
               href={c.href}
               target={c.href.startsWith("http") ? "_blank" : undefined}
               rel={c.href.startsWith("http") ? "noopener noreferrer" : undefined}
-              className="flex items-center gap-4 rounded-xl border border-bg-border bg-bg-surface p-4 transition-colors hover:border-accent/50"
+              className="flex items-center gap-4 rounded-xl border border-bg-border bg-white p-4 shadow-xs transition-colors hover:border-accent/40"
             >
-              <span className="flex h-10 w-10 items-center justify-center rounded-lg bg-bg-raised text-accent-soft">
+              <span className="flex h-10 w-10 items-center justify-center rounded-lg bg-bg-raised text-accent">
                 <c.icon size={18} aria-hidden="true" />
               </span>
               <span>

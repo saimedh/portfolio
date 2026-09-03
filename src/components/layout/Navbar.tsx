@@ -31,11 +31,13 @@ export function Navbar() {
     <header
       className={cn(
         "fixed top-0 z-50 w-full transition-all duration-300",
-        scrolled ? "glass" : "bg-transparent border-b border-transparent"
+        scrolled
+          ? "glass shadow-xs"
+          : "bg-bg/90 backdrop-blur-md border-b border-bg-border/80"
       )}
     >
       <nav className="container-page flex h-16 items-center justify-between" aria-label="Primary">
-        <NavLink to="/" className="flex items-center gap-2 font-display text-lg font-semibold text-ink" aria-label="Home">
+        <NavLink to="/" className="flex items-center gap-2 font-display text-lg font-bold text-ink" aria-label="Home">
           <Terminal size={20} className="text-accent" aria-hidden="true" />
           saimedh<span className="text-accent">.</span>dev
         </NavLink>
@@ -48,10 +50,10 @@ export function Navbar() {
               end={link.to === "/"}
               className={({ isActive }) =>
                 cn(
-                  "rounded-md px-4 py-2 font-mono text-xs uppercase tracking-wider transition-colors",
+                  "rounded-md px-3.5 py-1.5 font-mono text-xs uppercase tracking-wider transition-colors",
                   isActive
-                    ? "text-signal"
-                    : "text-ink-muted hover:text-ink"
+                    ? "text-accent font-semibold bg-accent/10"
+                    : "text-ink-muted hover:text-ink hover:bg-bg-raised"
                 )
               }
             >
@@ -60,7 +62,7 @@ export function Navbar() {
           ))}
           <NavLink
             to="/contact"
-            className="ml-3 rounded-lg bg-accent px-4 py-2 font-body text-sm font-medium text-white transition-colors hover:bg-accent-soft"
+            className="ml-3 rounded-lg bg-accent px-4 py-2 font-body text-sm font-semibold text-white shadow-xs transition-all hover:bg-accent-dim hover:shadow-sm active:scale-[0.98]"
           >
             Invite to Interview
           </NavLink>
@@ -93,8 +95,8 @@ export function Navbar() {
                   end={link.to === "/"}
                   className={({ isActive }) =>
                     cn(
-                      "rounded-md px-3 py-3 font-mono text-sm uppercase tracking-wider",
-                      isActive ? "text-signal" : "text-ink-muted"
+                      "rounded-md px-3 py-2.5 font-mono text-xs uppercase tracking-wider transition-colors",
+                      isActive ? "text-accent font-semibold bg-accent/10" : "text-ink-muted hover:text-ink"
                     )
                   }
                 >
@@ -103,7 +105,7 @@ export function Navbar() {
               ))}
               <NavLink
                 to="/contact"
-                className="mt-2 rounded-lg bg-accent px-4 py-3 text-center font-body text-sm font-medium text-white"
+                className="mt-2 rounded-lg bg-accent px-4 py-2.5 text-center font-body text-sm font-semibold text-white shadow-xs hover:bg-accent-dim"
               >
                 Invite to Interview
               </NavLink>

@@ -2,7 +2,7 @@ import { Code2, Link2, Mail, FileText } from "lucide-react";
 
 export function Footer() {
   return (
-    <footer className="border-t border-bg-border bg-bg-surface/50">
+    <footer className="border-t border-bg-border bg-white">
       <div className="container-page grid gap-10 py-14 sm:grid-cols-3">
         <div>
           <p className="font-display text-lg font-semibold text-ink">

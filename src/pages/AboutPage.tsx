@@ -72,7 +72,7 @@ export default function AboutPage() {
               <div>
                 <p className="font-mono text-xs text-ink-faint">{item.period}</p>
                 <p className="mt-1 font-display font-semibold text-ink">{item.role}</p>
-                <p className="text-sm text-accent-soft">{item.org}</p>
+                <p className="text-sm text-accent font-medium">{item.org}</p>
               </div>
               <ul className="space-y-1.5">
                 {item.points.map((point) => (
@@ -91,7 +91,7 @@ export default function AboutPage() {
         <SectionHeading eyebrow="// certifications" title="Certifications" />
         <ul className="mt-8 grid gap-3 sm:grid-cols-3">
           {certifications.map((cert) => (
-            <li key={cert} className="rounded-lg border border-bg-border bg-bg-surface p-4 text-sm text-ink-muted">
+            <li key={cert} className="rounded-lg border border-bg-border bg-white p-4 text-sm text-ink-muted shadow-xs">
               {cert}
             </li>
           ))}
@@ -102,7 +102,7 @@ export default function AboutPage() {
         <SectionHeading eyebrow="// skills" title="Skills" />
         <div className="mt-10 grid gap-px overflow-hidden rounded-xl border border-bg-border bg-bg-border sm:grid-cols-2 lg:grid-cols-4">
           {skillGroups.map((group) => (
-            <div key={group.label} className="bg-bg-surface p-6">
+            <div key={group.label} className="bg-white p-6">
               <p className="eyebrow">{group.label}</p>
               <ul className="mt-4 space-y-2">
                 {group.items.map((item) => (
@@ -120,7 +120,7 @@ export default function AboutPage() {
           {timeline.map((item, i) => (
             <li key={item.year} className="relative flex gap-6 pb-10 last:pb-0">
               <div className="flex flex-col items-center">
-                <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-accent/40 bg-bg-raised font-mono text-[10px] text-accent-soft">
+                <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-accent/40 bg-white font-mono text-[10px] text-accent font-semibold shadow-xs">
                   {item.year.slice(2)}
                 </span>
                 {i < timeline.length - 1 && <span className="mt-1 w-px flex-1 bg-bg-border" />}

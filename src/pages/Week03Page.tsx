@@ -36,14 +36,14 @@ const stillNeedToGather = [
 ];
 
 const colorTokens = [
-  { name: "Obsidian Base", hex: "#090A0F", role: "Page Canvas Background", textDark: false },
-  { name: "Dark Charcoal", hex: "#11131A", role: "Card & Panel Surface", textDark: false },
-  { name: "Raised Charcoal", hex: "#181B24", role: "Elevated Badges & Code Blocks", textDark: false },
-  { name: "Structural Slate", hex: "#202430", role: "Borders & Hairline Dividers", textDark: false },
-  { name: "Near-White", hex: "#F3F4F6", role: "Primary Headings & High Contrast Text", textDark: true },
-  { name: "Muted Slate", hex: "#94A3B8", role: "Body Descriptions & Secondary Labels", textDark: true },
-  { name: "Calm Indigo", hex: "#6366F1", role: "Brand Accent & Primary CTAs", textDark: false },
-  { name: "Mint Emerald", hex: "#10B981", role: "Live Status & Accuracy Signals", textDark: true },
+  { name: "Clean Off-White", hex: "#FAFAFA", role: "Page Canvas Background", textDark: true },
+  { name: "Pure White", hex: "#FFFFFF", role: "Card & Panel Surface", textDark: true },
+  { name: "Raised Gray", hex: "#F3F4F6", role: "Elevated Badges & Code Blocks", textDark: true },
+  { name: "Structural Slate", hex: "#E5E7EB", role: "Borders & Hairline Dividers", textDark: true },
+  { name: "Deep Charcoal", hex: "#111827", role: "Primary Headings & High Contrast Text", textDark: false },
+  { name: "Muted Slate", hex: "#4B5563", role: "Body Descriptions & Secondary Labels", textDark: false },
+  { name: "Modern Orange", hex: "#FF5722", role: "Brand Accent & Primary CTAs", textDark: false },
+  { name: "Clean Emerald", hex: "#16A34A", role: "Live Status & Accuracy Signals", textDark: false },
 ];
 
 export default function Week03Page() {
