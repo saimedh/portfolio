@@ -23,7 +23,7 @@ export interface Project {
 export const projects: Project[] = [
   {
     slug: "vedha-ai",
-    name: "Vedha AI",
+    name: "Vedha AI (Paverasa AI)",
     status: "LIVE",
     tagline: "One app. Multiple AI tools. An AI workspace that turns one user goal into an executable workflow.",
     caseStudyUrl: "/projects/vedha-ai",

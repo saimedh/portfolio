@@ -252,7 +252,7 @@ export default function PaverasaCaseStudyPage() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="mt-5 font-display text-4xl font-bold tracking-tight text-[#111827] sm:text-6xl"
             >
-              Vedha AI
+              Vedha AI (formerly Paverasa AI)
             </motion.h1>
 
             <motion.p

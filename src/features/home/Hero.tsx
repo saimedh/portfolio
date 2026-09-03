@@ -60,7 +60,7 @@ export function Hero() {
                 Lead Project Spotlight
               </span>
               <span className="font-mono text-xs text-ink-faint">·</span>
-              <span className="font-display text-sm font-bold text-ink">Vedha AI</span>
+              <span className="font-display text-sm font-bold text-ink">Vedha AI (Paverasa AI)</span>
             </div>
             <a
               href="https://vedhai.lovable.app/"
