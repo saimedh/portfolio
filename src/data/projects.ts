@@ -22,6 +22,48 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    slug: "personal-project-agent",
+    name: "Personal Project & Career Agent",
+    status: "LIVE",
+    tagline: "Autonomous Model Context Protocol (MCP) career analysis agent connected to local workspace.",
+    caseStudyUrl: "/agent",
+    goal: "Autonomously analyze career and project files inside a connected local workspace using Claude Desktop and Model Context Protocol (MCP) to produce grounded ATS fit evaluations and deliverables without hallucinating.",
+    problem:
+      "Students and engineers maintain scattered resumes, project notes, and certifications across multiple files. Tailoring these against complex job descriptions manually takes hours and leads to inconsistent keyword alignment, while standard LLMs hallucinate unverified credentials if not grounded strictly in local files.",
+    solution:
+      "I built the Personal Project & Career Agent using Claude Desktop and the Model Context Protocol (@modelcontextprotocol/server-filesystem). The agent mounts a local workspace (~/personal-agent), dynamically inspects resume, skills, and project notes via MCP tools, enforces 8 strict safety guardrails, and writes verified markdown deliverables into output/ with 100% provenance citations.",
+    process: [
+      "Configured Model Context Protocol (MCP) filesystem server for Claude Desktop on Windows (MSIX package path)",
+      "Structured sandboxed ~/personal-agent workspace with input/ (read-only), projects/ (read-only), and output/ (writable)",
+      "Engineered 8 strict system rules enforcing mandatory file inspection, zero hallucination, and exact file provenance",
+      "Designed and executed 6-point evaluation battery covering multi-file synthesis, refusal mechanics, and file immutability",
+    ],
+    architecture: [
+      "Host Client: Claude Desktop (Claude 3.7 Sonnet / Native Electron MSIX)",
+      "Transport: JSON-RPC 2.0 protocol over stdio subprocess stream",
+      "MCP Server: @modelcontextprotocol/server-filesystem exposing read_file, write_file, list_directory",
+      "Security Model: Sandboxed workspace boundary with strict read-only source files and immutability guardrails",
+      "Interactive Hub: Embedded React/TypeScript simulation runner and filesystem inspector",
+    ],
+    stack: ["Model Context Protocol (MCP)", "Claude Desktop", "TypeScript", "Node.js", "Python", "JSON-RPC", "React"],
+    results: [
+      "100% pass rate across all 6 live evaluation benchmark test cases",
+      "Zero hallucinated credentials observed in hostile prompt injection and unknown skill tests",
+      "Autonomous file-to-file deliverable generation directly in ~/personal-agent/output/",
+      "Interactive live web studio and simulation hub deployed on portfolio",
+    ],
+    lessons: [
+      "Filesystem MCP servers require careful Windows path handling and shell encapsulation (cmd.exe /c npx) to avoid Node child_process EINVAL errors",
+      "Strict provenance citations ([Source: path]) eliminate LLM hallucinations far more effectively than generic prompt instructions",
+    ],
+    github: "https://github.com/saimedh/portfolio",
+    demo: "/agent",
+    metric: { label: "Evaluation", value: "6/6 Tests PASS" },
+    image: null,
+    imageLabel: "Personal Agent MCP Filesystem Architecture & Live Execution",
+    realScreenshotsAvailable: false,
+  },
+  {
     slug: "vedha-ai",
     name: "Vedha AI (Paverasa AI)",
     status: "LIVE",

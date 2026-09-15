@@ -8,6 +8,8 @@ import ContactPage from "./pages/ContactPage";
 import Week03Page from "./pages/Week03Page";
 import NotFoundPage from "./pages/NotFoundPage";
 
+import PersonalAgentPage from "./pages/PersonalAgentPage";
+
 export default function App() {
   return (
     <Routes>
@@ -16,6 +18,8 @@ export default function App() {
         <Route path="/projects" element={<ProjectsPage />} />
         <Route path="/projects/vedha-ai" element={<PaverasaCaseStudyPage />} />
         <Route path="/projects/paverasa-ai" element={<PaverasaCaseStudyPage />} />
+        <Route path="/agent" element={<PersonalAgentPage />} />
+        <Route path="/personal-agent" element={<PersonalAgentPage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/process" element={<Week03Page />} />
         <Route path="/week-03" element={<Week03Page />} />
