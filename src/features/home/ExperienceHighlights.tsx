@@ -4,7 +4,7 @@ import { SectionHeading } from "../../components/shared/SectionHeading";
 
 export function ExperienceHighlights() {
   return (
-    <section className="container-page py-24">
+    <section id="experience" className="container-page py-24 scroll-mt-20">
       <SectionHeading
         eyebrow="// 04_track_record"
         title="Recent track record"

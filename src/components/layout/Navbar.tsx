@@ -10,7 +10,6 @@ const links = [
   { to: "/agent", label: "Agent" },
   { to: "/about", label: "About" },
   { to: "/process", label: "Process" },
-  { to: "/contact", label: "Contact" },
 ];
 
 export function Navbar() {

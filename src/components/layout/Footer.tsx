@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Code2, Link2, Mail, FileText } from "lucide-react";
 
 export function Footer() {
@@ -17,11 +18,12 @@ export function Footer() {
         <div>
           <p className="eyebrow mb-4">Navigate</p>
           <ul className="space-y-2 text-sm">
-            <li><a href="/" className="text-ink-muted hover:text-ink">Home</a></li>
-            <li><a href="/projects" className="text-ink-muted hover:text-ink">Projects</a></li>
-            <li><a href="/about" className="text-ink-muted hover:text-ink">About</a></li>
-            <li><a href="/process" className="text-ink-muted hover:text-ink">Process & Curation</a></li>
-            <li><a href="/contact" className="text-ink-muted hover:text-ink">Contact</a></li>
+            <li><Link to="/" className="text-ink-muted hover:text-ink">Home</Link></li>
+            <li><Link to="/projects" className="text-ink-muted hover:text-ink">Projects</Link></li>
+            <li><Link to="/agent" className="text-ink-muted hover:text-ink">Career Agent</Link></li>
+            <li><Link to="/about" className="text-ink-muted hover:text-ink">About</Link></li>
+            <li><Link to="/process" className="text-ink-muted hover:text-ink">Process & Curation</Link></li>
+            <li><Link to="/contact" className="text-ink-muted hover:text-ink">Contact</Link></li>
           </ul>
         </div>
 

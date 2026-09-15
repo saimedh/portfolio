@@ -54,8 +54,8 @@ export default function ContactPage() {
             <a
               key={c.label}
               href={c.href}
-              target={c.href.startsWith("http") ? "_blank" : undefined}
-              rel={c.href.startsWith("http") ? "noopener noreferrer" : undefined}
+              target={c.href.startsWith("http") || c.href.endsWith(".pdf") ? "_blank" : undefined}
+              rel={c.href.startsWith("http") || c.href.endsWith(".pdf") ? "noopener noreferrer" : undefined}
               className="flex items-center gap-4 rounded-xl border border-bg-border bg-white p-4 shadow-xs transition-colors hover:border-accent/40"
             >
               <span className="flex h-10 w-10 items-center justify-center rounded-lg bg-bg-raised text-accent">

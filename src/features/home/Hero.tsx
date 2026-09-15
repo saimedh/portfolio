@@ -33,8 +33,8 @@ export function Hero() {
           transition={{ duration: 0.6, delay: 0.1 }}
           className="max-w-3xl text-4xl font-semibold leading-[1.1] text-ink sm:text-6xl tracking-tight"
         >
-          I build AI-powered products that turn
-          <span className="bg-gradient-to-r from-accent to-[#EA580C] bg-clip-text text-transparent"> real problems into usable software.</span>
+          I build AI-powered web applications & software products,
+          <span className="bg-gradient-to-r from-accent to-[#EA580C] bg-clip-text text-transparent"> combining full-stack development with machine learning.</span>
         </motion.h1>
 
         <motion.p
@@ -43,7 +43,7 @@ export function Hero() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="max-w-xl text-lg text-ink-muted leading-relaxed"
         >
-          Not notebooks or brittle prototypes. Six end-to-end systems shipped from data pipelines and model training to deployed, usable interfaces.
+          Not notebooks or brittle prototypes. End-to-end systems shipped from data pipelines and model training to deployed, production-ready interfaces.
         </motion.p>
 
         {/* Lead with Strongest Project: Vedha AI Spotlight Card */}

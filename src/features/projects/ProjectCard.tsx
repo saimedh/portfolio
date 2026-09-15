@@ -91,10 +91,10 @@ export function ProjectCard({ project, index, nextProjectSlug }: { project: Proj
         )}
 
         {/* Live Metrics & Status Banner */}
-        <div className="grid grid-cols-3 gap-px bg-bg-border p-px">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-px bg-bg-border p-px">
           {[project.metric, { label: "Deployment", value: project.status }, { label: "Stack Size", value: `${project.stack.length} tools` }].map((m) => (
-            <div key={m.label} className="bg-white p-4 text-center">
-              <p className="font-mono text-lg font-bold text-signal sm:text-xl">{m.value}</p>
+            <div key={m.label} className="bg-white p-3 sm:p-4 text-center">
+              <p className="font-mono text-base font-bold text-signal sm:text-xl break-words">{m.value}</p>
               <p className="mt-1 font-mono text-[10px] uppercase tracking-wider text-ink-faint">{m.label}</p>
             </div>
           ))}

@@ -10,7 +10,7 @@ export function FeaturedProjects() {
   const otherFeatured = projects.slice(1, 5); // India Crime Rate Prediction, Health Navigator AI, Forest Fire Detection, Movie Recommendation System
 
   return (
-    <section className="container-page py-20 sm:py-24">
+    <section id="projects" className="container-page py-20 sm:py-24 scroll-mt-20">
       <SectionHeading
         eyebrow="// 01_proof"
         title="Featured builds"

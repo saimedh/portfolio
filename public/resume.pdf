@@ -1,0 +1,270 @@
+%PDF-1.4
+%“Œ‹ž ReportLab Generated PDF document (opensource)
+1 0 obj
+<<
+/F1 2 0 R /F2 3 0 R /F3 4 0 R /F4 5 0 R
+>>
+endobj
+2 0 obj
+<<
+/BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font
+>>
+endobj
+3 0 obj
+<<
+/BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font
+>>
+endobj
+4 0 obj
+<<
+/BaseFont /Helvetica-Oblique /Encoding /WinAnsiEncoding /Name /F3 /Subtype /Type1 /Type /Font
+>>
+endobj
+5 0 obj
+<<
+/BaseFont /Symbol /Name /F4 /Subtype /Type1 /Type /Font
+>>
+endobj
+6 0 obj
+<<
+/Contents 10 0 R /MediaBox [ 0 0 612 792 ] /Parent 9 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+7 0 obj
+<<
+/PageMode /UseNone /Pages 9 0 R /Type /Catalog
+>>
+endobj
+8 0 obj
+<<
+/Author (\(anonymous\)) /CreationDate (D:20260915111829+05'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20260915111829+05'00') /Producer (ReportLab PDF Library - \(opensource\)) 
+  /Subject (\(unspecified\)) /Title (\(anonymous\)) /Trapped /False
+>>
+endobj
+9 0 obj
+<<
+/Count 1 /Kids [ 6 0 R ] /Type /Pages
+>>
+endobj
+10 0 obj
+<<
+/Length 6710
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 46 720 cm
+q
+.101961 .211765 .364706 rg
+BT 1 0 0 1 0 4 Tm /F2 22 Tf 26 TL (SAI MEDH) Tj T* ET
+Q
+Q
+q
+1 0 0 1 46 702 cm
+q
+BT 1 0 0 1 0 4 Tm 14 TL /F1 10 Tf .290196 .333333 .407843 rg (Hyderabad, Telangana, India \177 github.com/saimedh \177 Portfolio: saimedh.dev \177 AI / ML & Software Developer) Tj T* ET
+Q
+Q
+q
+1 0 0 1 46 691 cm
+q
+1 w
+1 J
+.796078 .835294 .878431 RG
+n 0 0 m 520 0 l S
+Q
+Q
+q
+1 0 0 1 46 667 cm
+q
+.168627 .423529 .690196 rg
+BT 1 0 0 1 0 4 Tm /F2 12 Tf 16 TL (EDUCATION) Tj T* ET
+Q
+Q
+q
+1 0 0 1 46 650 cm
+q
+BT 1 0 0 1 0 4 Tm 13 TL /F2 9 Tf .176471 .215686 .282353 rg (CMR Institute of Technology) Tj /F1 9 Tf (, Hyderabad \227 ) Tj /F3 9 Tf (B.Tech in Computer Science and Engineering \(AI & ML\)) Tj /F1 9 Tf ( | 2024 \226 Present) Tj T* ET
+Q
+Q
+q
+1 0 0 1 46 620 cm
+q
+BT 1 0 0 1 12 17 Tm -8 0 Td 13 TL /F1 9 Tf .176471 .215686 .282353 rg (\177 Core Coursework: Machine Learning Foundations, Deep Learning, Data Structures & Algorithms, Database Systems, Cloud) Tj T* 8 0 Td (Computing.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 46 596 cm
+q
+.168627 .423529 .690196 rg
+BT 1 0 0 1 0 4 Tm /F2 12 Tf 16 TL (TECHNICAL SKILLS) Tj T* ET
+Q
+Q
+q
+1 0 0 1 46 566 cm
+q
+BT 1 0 0 1 12 17 Tm -8 0 Td 13 TL /F2 9 Tf .176471 .215686 .282353 rg (AI / Machine Learning:) Tj /F1 9 Tf ( PyTorch, scikit-learn, XGBoost, LLM APIs \(OpenAI, Gemini\), RAG, Prompt Engineering, Embeddings,) Tj T* 8 0 Td (GeoPandas) Tj T* ET
+Q
+Q
+q
+1 0 0 1 46 551 cm
+q
+BT 1 0 0 1 12 4 Tm -8 0 Td 13 TL /F2 9 Tf .176471 .215686 .282353 rg (Backend & Systems:) Tj /F1 9 Tf ( Python, FastAPI, Node.js, PostgreSQL, Redis, RESTful API Design, Docker, Kubernetes, Linux) Tj T* 8 0 Td ET
+Q
+Q
+q
+1 0 0 1 46 536 cm
+q
+BT 1 0 0 1 12 4 Tm -8 0 Td 13 TL /F2 9 Tf .176471 .215686 .282353 rg (Frontend & UI:) Tj /F1 9 Tf ( React, TypeScript, Next.js, Tailwind CSS, Vite, Streamlit) Tj T* 8 0 Td ET
+Q
+Q
+q
+1 0 0 1 46 521 cm
+q
+BT 1 0 0 1 12 4 Tm -8 0 Td 13 TL /F2 9 Tf .176471 .215686 .282353 rg (Tools & Platforms:) Tj /F1 9 Tf ( Git, GitHub Actions, AWS, Supabase, Firebase, Nginx, MCP \(Model Context Protocol\)) Tj T* 8 0 Td ET
+Q
+Q
+q
+1 0 0 1 46 497 cm
+q
+.168627 .423529 .690196 rg
+BT 1 0 0 1 0 4 Tm /F2 12 Tf 16 TL (FEATURED PROJECTS) Tj T* ET
+Q
+Q
+q
+1 0 0 1 46 467 cm
+q
+BT 1 0 0 1 0 17 Tm 13 TL /F2 9 Tf .176471 .215686 .282353 rg (Vedha AI \(Paverasa AI\) \227 Unified AI Productivity Workspace & Workflow Engine) Tj /F1 9 Tf ( | ) Tj /F3 9 Tf (FastAPI, Flutter, Redis, PostgreSQL,) Tj T* (Gemini/OpenAI APIs, Docker) Tj T* ET
+Q
+Q
+q
+1 0 0 1 46 437 cm
+q
+BT 1 0 0 1 12 17 Tm -8 0 Td 13 TL /F1 9 Tf .176471 .215686 .282353 rg (\177 Architected full-stack AI workspace unifying 10+ AI tools \(AI Chat, Code Generator, PDF Chat, OCR Scanner, Image Gen\)) Tj T* 8 0 Td (eliminating tool-switching fatigue.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 46 409 cm
+q
+BT 1 0 0 1 12 17 Tm -8 0 Td 13 TL /F1 9 Tf .176471 .215686 .282353 rg (\177 Implemented resilient FastAPI microservice layer with Redis caching, asynchronous task queues, upstream rate limiting, and) Tj T* 8 0 Td (automated multi-model fallbacks.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 46 381 cm
+q
+BT 1 0 0 1 12 17 Tm -8 0 Td 13 TL /F1 9 Tf .176471 .215686 .282353 rg (\177 Containerized backend services with Docker & Kubernetes for production deployment on AWS behind Nginx reverse proxy with) Tj T* 8 0 Td (automated GitHub Actions CI/CD.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 46 353 cm
+q
+BT 1 0 0 1 0 17 Tm 13 TL /F2 9 Tf .176471 .215686 .282353 rg (India Crime Rate Prediction System \227 Spatiotemporal Patrol Risk Forecasting) Tj /F1 9 Tf ( | ) Tj /F3 9 Tf (Python, XGBoost, scikit-learn, GeoPandas,) Tj T* (Streamlit) Tj T* ET
+Q
+Q
+q
+1 0 0 1 46 323 cm
+q
+BT 1 0 0 1 12 17 Tm -8 0 Td 13 TL /F1 9 Tf .176471 .215686 .282353 rg (\177 Processed and cleaned 3,600+ historical incident records across 20 cities and 16 crime categories, engineering 37) Tj T* 8 0 Td (spatiotemporal features \(rolling density, time-of-day bins\).) Tj T* ET
+Q
+Q
+q
+1 0 0 1 46 295 cm
+q
+BT 1 0 0 1 12 17 Tm -8 0 Td -0.033 Tw 13 TL /F1 9 Tf .176471 .215686 .282353 rg (\177 Trained and cross-validated XGBoost classification and regression models, achieving ~93% risk classification accuracy and R) Tj (\262 ) Tj /F4 9 Tf 13 TL (\273) Tj /F1 9 Tf 13 TL T* 0 Tw 8 0 Td (0.92 incident frequency forecasting.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 46 267 cm
+q
+BT 1 0 0 1 12 17 Tm -8 0 Td 13 TL /F1 9 Tf .176471 .215686 .282353 rg (\177 Deployed interactive GIS mapping dashboard enabling urban civic safety teams to simulate risk scenarios and optimize patrol) Tj T* 8 0 Td (unit allocations.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 46 252 cm
+q
+BT 1 0 0 1 0 4 Tm 13 TL /F2 9 Tf .176471 .215686 .282353 rg (Health Navigator AI \227 Clinical Symptom Triage & Specialist Routing) Tj /F1 9 Tf ( | ) Tj /F3 9 Tf (Python, FastAPI, PyTorch, Redis, React, TypeScript) Tj T* ET
+Q
+Q
+q
+1 0 0 1 46 222 cm
+q
+BT 1 0 0 1 12 17 Tm -8 0 Td 13 TL /F1 9 Tf .176471 .215686 .282353 rg (\177 Built clinical symptom-to-specialist routing engine fine-tuned on medical taxonomy benchmarks across 200 validation scenarios) Tj T* 8 0 Td (with 83% agreement.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 46 194 cm
+q
+BT 1 0 0 1 12 17 Tm -8 0 Td 13 TL /F1 9 Tf .176471 .215686 .282353 rg (\177 Engineered deterministic rule-based emergency triage filters prior to model inference, guaranteeing zero missed red-flag) Tj T* 8 0 Td (emergency symptoms.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 46 179 cm
+q
+BT 1 0 0 1 12 4 Tm -8 0 Td 13 TL /F1 9 Tf .176471 .215686 .282353 rg (\177 Created touch-optimized clinic kiosk frontend with Redis session caching and clean clinical intake handoff documentation.) Tj T* 8 0 Td ET
+Q
+Q
+q
+1 0 0 1 46 151 cm
+q
+BT 1 0 0 1 0 17 Tm 13 TL /F2 9 Tf .176471 .215686 .282353 rg (FreeKeys \(API Emporium\) \227 Directory & Comparison Tool for Free AI APIs) Tj /F1 9 Tf ( | ) Tj /F3 9 Tf (React, TypeScript, Tailwind CSS, Vite, Model) Tj T* (Context Protocol) Tj T* ET
+Q
+Q
+q
+1 0 0 1 46 121 cm
+q
+BT 1 0 0 1 12 17 Tm -8 0 Td 13 TL /F1 9 Tf .176471 .215686 .282353 rg (\177 Developed searchable developer directory indexing 90+ free AI model API tiers and 40+ Model Context Protocol \(MCP\) servers) Tj T* 8 0 Td (with real-time rate limit comparisons.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 46 97 cm
+q
+.168627 .423529 .690196 rg
+BT 1 0 0 1 0 4 Tm /F2 12 Tf 16 TL (EXPERIENCE) Tj T* ET
+Q
+Q
+q
+1 0 0 1 46 80 cm
+q
+BT 1 0 0 1 0 4 Tm 13 TL /F2 9 Tf .176471 .215686 .282353 rg (AI / Software Developer \(Independent & Client Projects\)) Tj /F1 9 Tf ( | ) Tj /F3 9 Tf (2025 \226 Present) Tj T* ET
+Q
+Q
+q
+1 0 0 1 46 63 cm
+q
+BT 1 0 0 1 12 4 Tm -8 0 Td 13 TL /F1 9 Tf .176471 .215686 .282353 rg (\177 Shipped multiple live production AI web applications with end-to-end data pipelines, custom ML models, and API integrations.) Tj T* 8 0 Td ET
+Q
+Q
+ 
+endstream
+endobj
+xref
+0 11
+0000000000 65535 f 
+0000000061 00000 n 
+0000000122 00000 n 
+0000000229 00000 n 
+0000000341 00000 n 
+0000000456 00000 n 
+0000000533 00000 n 
+0000000727 00000 n 
+0000000795 00000 n 
+0000001075 00000 n 
+0000001134 00000 n 
+trailer
+<<
+/ID 
+[<c10c6b9dfabd18e6d38c2db12200a234><c10c6b9dfabd18e6d38c2db12200a234>]
+% ReportLab generated PDF document -- digest (opensource)
+
+/Info 8 0 R
+/Root 7 0 R
+/Size 11
+>>
+startxref
+7896
+%%EOF

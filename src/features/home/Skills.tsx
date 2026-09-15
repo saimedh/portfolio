@@ -4,7 +4,7 @@ import { SectionHeading } from "../../components/shared/SectionHeading";
 
 export function Skills() {
   return (
-    <section className="container-page py-24">
+    <section id="skills" className="container-page py-24 scroll-mt-20">
       <SectionHeading
         eyebrow="// 02_capability"
         title="What I bring to a team"
