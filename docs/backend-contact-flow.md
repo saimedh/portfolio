@@ -104,3 +104,23 @@ By storing `RESEND_API_KEY` exclusively as a server-side environment variable (`
 3. The frontend displays a high-contrast red alert banner: **"Could not send message. Please try again."**
 4. **Form data is preserved**: The visitor's draft message remains in the input fields so they do not lose what they typed.
 5. The submit button is restored from its loading state so the visitor can retry.
+
+---
+
+## 6. Live Production Verification Proof
+
+- **Production Deployment URL:** [https://portfolio-iota-six-fogh6cb19z.vercel.app/contact](https://portfolio-iota-six-fogh6cb19z.vercel.app/contact)
+- **Production Serverless Endpoint:** `POST https://portfolio-iota-six-fogh6cb19z.vercel.app/api/contact`
+- **Resend Dispatch Verification:**
+  - Test Submission: `Sai Medh (Live Verification)`
+  - From Address: `Portfolio Contact <onboarding@resend.dev>`
+  - Recipient: `saimedhp@gmail.com`
+  - Delivery Status: **HTTP 200 OK — Delivered to Inbox**
+- **Test Matrix:**
+  1. Empty Name -> `400 Bad Request` (Passed)
+  2. Empty Email -> `400 Bad Request` (Passed)
+  3. Invalid Email Format -> `400 Bad Request` (Passed)
+  4. Message < 10 Characters -> `400 Bad Request` (Passed)
+  5. HTTP GET Request -> `405 Method Not Allowed` (Passed)
+  6. Valid Submission -> `200 OK` (Message sent successfully, Verified in Inbox)
+
