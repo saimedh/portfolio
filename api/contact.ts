@@ -95,8 +95,8 @@ export default async function handler(req: any, res: any) {
       });
     }
 
-    const resendApiKey = process.env.RESEND_API_KEY;
-    const recipientEmail = process.env.CONTACT_EMAIL || "saimedhp@gmail.com";
+    const resendApiKey = process.env.RESEND_API_KEY ? process.env.RESEND_API_KEY.trim() : "";
+    const recipientEmail = (process.env.CONTACT_EMAIL ? process.env.CONTACT_EMAIL.trim() : "") || "saimedhp@gmail.com";
 
     // Handle missing API key
     if (!resendApiKey) {
